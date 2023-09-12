@@ -2,15 +2,15 @@ import React from "react";
 import { Provider } from "react-redux";
 import store from "../../Common/Store";
 // import Container from "./Container";
-// import UserInfo from "../../Common/Component/UserInfo";
+import UserInfo from "../../Common/Component/UserInfo";
 
 const Python = (props) => {
   return (
     <Provider store={store}>
-      <div>python</div>
-      {/* <UserInfo>
-    <Container {...props} />
-    </UserInfo> */}
+      <UserInfo>
+        <div>python</div>
+        {/* <Container {...props} /> */}
+      </UserInfo>
     </Provider>
   );
 };
