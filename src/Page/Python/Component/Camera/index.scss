@@ -1,0 +1,61 @@
+.Python_Camera {
+  position: absolute;
+  width: 24vw;
+  height: auto;
+  z-index: 7;
+  left: 70%;
+  top: 15%;
+  border-radius: 20px;
+
+  .Camera_Content {
+    width: 24vw;
+
+    .Camera_Header {
+      height: 36px;
+      line-height: 44px;
+      text-align: center;
+      vertical-align: middle;
+      background-color: #393e4f;
+      color: #ffffff;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+
+      cursor: all-scroll;
+
+      img {
+        margin-top: 16px;
+      }
+    }
+
+    .Camera_Videos {
+      position: relative;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #ffffff;
+      width: 24vw;
+      height: 13.5vw;
+    }
+
+    //temp
+    .RemoteVideo {
+      background: black;
+      width: 100%;
+      min-height: 190px;
+      height: 13.5vw;
+      border-radius: 0 0 20px 20px;
+    }
+    .LocalVideo {
+      background: black;
+      width: 150px;
+      height: 40%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      border: 2px solid red;
+    }
+  }
+}

@@ -1,0 +1,898 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+html,
+body,
+header,
+div,
+footer {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  //   font: inherit;
+  //   color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.en {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.ko {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+@font-face {
+  font-family: "IdlewildSSm Bold";
+  src: url("./fonts/IdlewildSSm-Bold.otf");
+}
+
+// ========== Gitple Style =========================
+#gitple-launcher {
+  z-index: 11 !important;
+}
+
+#report #gitple-launcher {
+  display: none !important;
+}
+
+#gitple-container {
+  position: absolute !important;
+}
+
+.gitple-open {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 140px;
+}
+
+#home .gitple-open {
+  bottom: 100px;
+}
+
+.gitple-close {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+#home .gitple-close {
+  bottom: 130px;
+}
+
+.gitple-container-enter {
+  bottom: 130px !important;
+}
+
+#home .gitple-container-enter {
+  bottom: 230px !important;
+}
+
+#gitple-launcher-custom-icon {
+  transition: none !important;
+}
+
+// renewal - rarla
+
+.mobile-br {
+  display: none;
+  @media screen and (max-width: 1199px) { 
+    display: block;
+  }
+}
+
+.renewal-freetrial-btn {
+  display: inline-block;
+  width: 168px;
+  line-height: 70px;
+  background: #2F69FF;
+  border-radius: 14px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 40px 15px -30px rgba(40, 75, 164, 0.5);
+  box-shadow: 0px 40px 15px -30px rgba(40, 75, 164, 0.5);
+  text-align: center;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1199px) {
+  .gitple-open {
+    right: -5px;
+    bottom: -10px;
+    width: 100px;
+  }
+
+  #home .gitple-open {
+    bottom: 50px;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+// ========== End - Gitple Style - End =========================
+
+#wizAlert {
+  white-space: pre;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .onebtn_wrapper {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    width: 320px;
+    max-width: 90%;
+    margin: 169px auto;
+    text-align: center;
+    color: #3a405b;
+    border-radius: 8px;
+    padding: 45px 20px 30px 20px;
+
+    .closeBtn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background-image: url("Image/icon-close-gray.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 21px;
+      height: 21px;
+      cursor: pointer;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.29;
+      margin-bottom: 20px;
+      white-space: pre-wrap;
+    }
+
+    .message {
+      font-size: 14px;
+      margin-bottom: 24px;
+      white-space: pre-line;
+      word-wrap: break-word;
+      word-break: keep-all;
+      line-height: 1.22;
+    }
+
+    .okBtn {
+      cursor: pointer;
+      outline: none;
+      display: block;
+      margin: 0 auto;
+      width: 180px;
+      height: 48px;
+      border-radius: 8px;
+      border: 0;
+      background-color: #63baf5;
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      text-decoration: none;
+      font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .freeTiralMessage {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      color: #000000;
+      font-size: 18px;
+      opacity: 0.5;
+    }
+
+    .callImage {
+      width: 15px;
+      height: 15px;
+      margin-right: 11px;
+      background-image: url("Image/call-answer.svg");
+    }
+  }
+
+  .twobtn_wrapper {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    width: 408px;
+    max-width: 90%;
+    margin: 169px auto;
+    text-align: center;
+    color: #181818;
+    border-radius: 8px;
+    padding: 56px 24px 30px;
+    font-size: 20px;
+
+    .two_btns {
+      margin-top: 32px;
+      height: 52px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .two_btn {
+      cursor: pointer;
+      display: block;
+      font-weight: 500;
+      width: 148px;
+      height: 48px;
+      line-height: 48px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #fff;
+      float: left;
+      outline: none;
+      -webkit-appearance: none;
+      font-size: 18px;
+    }
+
+    .two_btn_message {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      color: #4a4a4a;
+    }
+
+    #two_btn_ok {
+      background-color: #f05c63;
+    }
+
+    #two_btn_main_color {
+      background-color: #63baf5;
+      border: none;
+    }
+
+    #two_btn_cancel {
+      margin-right: 16px;
+      border: solid 1px #63baf5;
+      color: #63baf5;
+      background-color: #ffffff;
+      font-weight: normal;
+    }
+  }
+
+  .title__two_msg {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 19px;
+    white-space: pre-wrap;
+  }
+
+  .message__two_msg {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  textarea {
+    width: 85%;
+    height: 100px;
+    // margin-bottom: 50px;
+    padding: 14px;
+    background-color: #fcfcfc;
+    border: solid 1px #ebebeb;
+    font-size: 16px;
+    resize: none;
+  }
+
+  textarea:focus {
+    outline: 0;
+    caret-color: #63baf5;
+  }
+
+  .message__holder {
+    background: #fcfcfc;
+    padding: 20px 0;
+    margin: 32px 0 0 0;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 8px;
+    border: solid 1px #ebebeb;
+  }
+
+  .message__holder__kv__row {
+    position: relative;
+    text-align: left;
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  .message__holder__kv__row + .message__holder__kv__row {
+    margin-top: 8px;
+  }
+
+  .message__holder__kv__row:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .message_kv {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .message_kv:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .message__holder__key {
+    font-weight: bold;
+    float: left;
+    margin-left: 24px;
+  }
+
+  .message__holder__value {
+    font-weight: normal;
+    float: right;
+    width: 180px;
+    margin-right: 24px;
+    text-align: right;
+  }
+
+  .tutorPopUp_wrapper {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    width: 438px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 4%;
+    text-align: center;
+    border-radius: 18px;
+    padding: 44px 15px;
+
+    .image {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .name {
+      margin-top: 14px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .stars {
+      display: inline-block;
+
+      .star {
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 24px;
+        margin: 4px;
+        width: 24px;
+      }
+
+      .on {
+        border: none;
+        background-image: url("./Image/star-on.svg");
+      }
+
+      .off {
+        background-image: url("./Image/star-off.svg");
+      }
+    }
+
+    .statusMessage {
+      margin: 20px 40px;
+      text-align: left;
+      white-space: normal;
+      display: block;
+      word-break: break-all;
+
+      .title {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 2;
+        color: #63baf5;
+      }
+
+      .content {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.5;
+        color: #000000;
+      }
+
+      .tutor_experience {
+        max-height: 200px;
+        overflow: scroll;
+      }
+    }
+
+    .registerButton {
+      margin-top: 20px;
+      width: 155px;
+      height: 43px;
+      border-width: 0px;
+      border-radius: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      background-color: #63baf5;
+      cursor: pointer;
+    }
+
+    .registerButton:focus {
+      outline: none;
+    }
+  }
+
+  .Event27Onebtn_wrapper {
+    display: block;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    width: 340px;
+    max-width: 90%;
+    margin: 169px auto;
+    text-align: center;
+    color: #3a405b;
+    border-radius: 16px;
+    padding: 45px 20px 30px 20px;
+
+    .closeBtn {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      background-image: url("Image/popup-close_gray.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.29;
+      margin-bottom: 20px;
+      white-space: pre-wrap;
+    }
+
+    .message {
+      font-size: 14px;
+      margin-bottom: 24px;
+      white-space: pre-line;
+      word-wrap: break-word;
+      word-break: keep-all;
+      line-height: 1.22;
+    }
+
+    .message {
+      font-size: 14px;
+      margin-bottom: 24px;
+      white-space: pre-line;
+      word-wrap: break-word;
+      word-break: keep-all;
+      line-height: 1.22;
+    }
+
+    .okBtn {
+      cursor: pointer;
+      outline: none;
+      display: block;
+      margin: 0 auto;
+      width: 180px;
+      height: 48px;
+      border-radius: 4px;
+      border: 0;
+      background-color: #63baf5;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 10px;
+      font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .freeTiralMessage {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      color: #000000;
+      font-size: 18px;
+      opacity: 0.5;
+    }
+
+    .callImage {
+      width: 15px;
+      height: 15px;
+      margin-right: 11px;
+      background-image: url("Image/call-answer.svg");
+    }
+  }
+
+  .Event28onebtn_wrapperMobile {
+    display: none;
+  }
+
+  .Event28onebtn_wrapper {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: #fff;
+    width: 689px;
+    height: auto;
+    text-align: center;
+    color: #3a405b;
+    border-radius: 16px;
+    padding: 90px 34px 32px 38px;
+
+    .step1,
+    .step2 {
+      width: 295px;
+      height: 367px;
+      padding: 35px 36px 22px 35px;
+      margin-right: 27px;
+      border-radius: 7px;
+      box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.18);
+      background-color: #ffffff;
+
+      img {
+        width: 224px;
+        height: 197px;
+      }
+
+      span {
+        display: flex;
+        width: 98px;
+        height: 30px;
+        margin: 20px 62px 7px 64px;
+        border-radius: 17px;
+        background-color: #414141;
+        color: #ffffff;
+      }
+
+      .logoText {
+        width: 198px;
+        line-height: 28px;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: -0.27px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .descText {
+        margin: 0 auto;
+        font-family: NotoSansCJKkr;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.56;
+        letter-spacing: -0.27px;
+        text-align: center;
+        color: #000000;
+      }
+    }
+
+    .closeBtn {
+      position: absolute;
+      right: 33px;
+      top: 34px;
+      background-image: url("Image/popup-close_gray.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 1.29;
+      margin-bottom: 10px;
+      letter-spacing: -0.45px;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .message {
+      margin-bottom: 24px;
+      white-space: pre-line;
+      word-wrap: break-word;
+      word-break: keep-all;
+      line-height: 1.22;
+      width: 413px;
+      height: 68px;
+      margin: 6px 74px 24px 100px;
+      font-size: 21px;
+      font-weight: normal;
+      line-height: 1.62;
+      letter-spacing: -0.31px;
+      text-align: center;
+      color: #000000;
+      font-weight: bold;
+
+      strong {
+        font-weight: bold;
+      }
+    }
+
+    .stepBox {
+      height: 367px;
+    }
+
+    .okBtn {
+      cursor: pointer;
+      outline: none;
+      display: block;
+      margin: 32px auto 0;
+      width: 280px;
+      height: 48px;
+      border-radius: 4px;
+      border: 0;
+      background-color: #63baf5;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .freeTiralMessage {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      color: #000000;
+      font-size: 18px;
+      opacity: 0.5;
+    }
+
+    .callImage {
+      width: 15px;
+      height: 15px;
+      margin-right: 11px;
+      background-image: url("Image/call-answer.svg");
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .Event28onebtn_wrapper {
+      display: none;
+    }
+
+    .Event28onebtn_wrapperMobile {
+      display: block;
+      position: relative;
+      box-sizing: border-box;
+      z-index: 2;
+      background: #fff;
+      width: 90%;
+      height: calc(100vh - 40px);
+      margin: 40px auto;
+      text-align: center;
+      color: #3a405b;
+      border-radius: 16px;
+      padding: 66px 20px 30px 20px;
+      overflow-y: auto;
+
+      .closeBtn {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background-image: url("Image/popup-close_gray.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+      }
+
+      .step1,
+      .step2 {
+        width: 90%;
+        padding: 35px 36px 22px 35px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border-radius: 7px;
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.18);
+        background-color: #ffffff;
+
+        img {
+          width: 100%;
+        }
+
+        .logoText {
+          margin: 15px auto 0;
+          width: 84px;
+          line-height: 28px;
+          font-size: 18px;
+          font-weight: bold;
+          letter-spacing: -0.27px;
+          text-align: center;
+          color: #ffffff;
+          border-radius: 17px;
+          background-color: #414141;
+          color: #ffffff;
+        }
+
+        .descText {
+          margin-top: 6px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.56;
+          letter-spacing: -0.27px;
+          text-align: center;
+          color: #000000;
+          font-weight: bold;
+        }
+      }
+
+      .title {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.29;
+        margin-bottom: 20px;
+        white-space: pre-wrap;
+        font-weight: bold;
+        color: #000000;
+        letter-spacing: -0.38px;
+      }
+
+      .message {
+        width: 100%;
+        margin-bottom: 20px;
+        white-space: pre-line;
+        word-wrap: break-word;
+        word-break: keep-all;
+        line-height: 1.22;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.62;
+        letter-spacing: -0.31px;
+        text-align: center;
+        color: #000000;
+        font-weight: bold;
+
+        strong {
+          font-weight: 900;
+        }
+      }
+
+      .okBtn {
+        cursor: pointer;
+        outline: none;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 52px;
+        border-radius: 4px;
+        border: 0;
+        background-color: #63baf5;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50px;
+      }
+
+      .freeTiralMessage {
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        color: #000000;
+        font-size: 18px;
+        opacity: 0.5;
+      }
+
+      .callImage {
+        width: 15px;
+        height: 15px;
+        margin-right: 11px;
+        background-image: url("Image/call-answer.svg");
+      }
+    }
+  }
+}

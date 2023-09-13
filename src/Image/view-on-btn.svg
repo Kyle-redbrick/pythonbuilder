@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="30px" viewBox="0 0 34 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>view_on_btn</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wizschool-1.1v" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landscape-1" transform="translate(-976.000000, -1040.000000)" fill="#8592A6">
+            <g id="bottom" transform="translate(810.000000, 1030.000000)">
+                <g id="view" transform="translate(153.000000, 10.000000)">
+                    <g id="view_on_btn" transform="translate(13.000000, 0.000000)">
+                        <g id="Group-4">
+                            <path d="M17,12.4323529 C15.491,12.4323529 14.273,13.5079412 14.273,14.8394118 C14.273,16.17 15.491,17.2455882 17,17.2455882 C18.51,17.2455882 19.728,16.17 19.728,14.8394118 C19.728,13.5079412 18.51,12.4323529 17,12.4323529 M17,18.8488235 C14.491,18.8488235 12.455,17.0523529 12.455,14.8394118 C12.455,12.6255882 14.491,10.8291176 17,10.8291176 C19.509,10.8291176 21.546,12.6255882 21.546,14.8394118 C21.546,17.0523529 19.509,18.8488235 17,18.8488235 M17,8.82352941 C12.455,8.82352941 8.573,11.3170588 7,14.8394118 C8.573,18.3617647 12.455,20.8552941 17,20.8552941 C21.546,20.8552941 25.427,18.3617647 27,14.8394118 C25.427,11.3170588 21.546,8.82352941 17,8.82352941" id="Fill-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

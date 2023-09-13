@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>publishing_btn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 -0.000162962963 32.6145926 -0.000162962963 32.6145926 21.7421926 0 21.7421926"></polygon>
+    </defs>
+    <g id="wizlab-interface-1.1-v" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landscape-1" transform="translate(-1683.000000, -14.000000)">
+            <g id="header">
+                <g id="publishing" transform="translate(1683.000000, 14.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M19.0256,12.2302074 L19.0256,17.6650222 L13.5899704,17.6650222 L13.5899704,12.2302074 L9.51263704,12.2302074 L15.8315259,5.9105037 C16.1036741,5.63835556 16.5257481,5.63835556 16.7970815,5.9105037 L23.1021185,12.2302074 L19.0256,12.2302074 Z M26.2953778,8.20746667 C25.3713778,3.52065185 21.2549333,-0.000162962963 16.3073778,-0.000162962963 C12.3799704,-0.000162962963 8.96915556,2.22835556 7.27026667,5.48924444 C3.1798963,5.92354074 -0.000325925926,9.39139259 -0.000325925926,13.5893185 C-0.000325925926,18.0879111 3.65574815,21.7423556 8.15352593,21.7423556 L25.8203407,21.7423556 C29.5701185,21.7423556 32.6150815,18.6990222 32.6150815,14.9484296 C32.6150815,11.3599852 29.8292296,8.45028148 26.2953778,8.20746667 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -9,6 +9,12 @@ function App() {
     <Router>
       <Route exact path="/" component={Test}></Route>
       <Route exact path="/python" component={Python}></Route>
+      <Route exact path="/pythonProject/:userType" component={Python} />
+      <Route
+        exact
+        path="/pythonProject/:userType/:reservationId"
+        component={Python}
+      />
     </Router>
   );
 }

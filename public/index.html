@@ -2,42 +2,385 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="google" value="notranslate" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+      id="viewport"
+      name="viewport"
+      content="width=device-width,initial-scale=1.0"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WizLive" />
+    <meta property="og:description" content="프리미엄 1:1 온라인 코딩 수업" />
+    <meta
+      property="og:image"
+      content="https://d1tz4sj00zmgsb.cloudfront.net/wizlive-thumbnail.png"
+    />
+    <meta property="og:url" content="https://wizlive.com" />
+    <meta name="description" content="프리미엄 1:1 온라인 코딩 수업" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="canonical" href="https://wizlive.com" />
+    <meta
+      name="naver-site-verification"
+      content="ed09254b1a35da3e870d5fb8682e3dfbd49b6108"
+    />
+    <meta
+      name="google-site-verification"
+      content="GGb-QqFL5JVpMmbKFKMAF17B0xEkKI13sXF-PeiQ0O4"
+    />
+    <meta
+      name="facebook-domain-verification"
+      content="9fg6vurwky52cao54c7ag19zv03r3m"
+    />
+
+    <script
+      type="text/javascript"
+      charset="UTF-8"
+      src="//t1.daumcdn.net/adfit/static/kp.js"
+    ></script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 623322625 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-623322625"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-623322625");
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 368986718 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-368986718"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-368986718", { allow_enhanced_conversions: true });
+    </script>
+
+    <!-- NsmartTA Common Script -->
+    <script>
+      (function (c, o, n, f, u, s, e, d) {
+        c["NsmartTrackingAnalytics"] = f;
+        (c[f] =
+          c[f] ||
+          function () {
+            (c[f].q = c[f].q || []).push(arguments);
+          }),
+          (c[f].d = u),
+          (c[f].g = s),
+          (e = o.createElement(n)),
+          (d = o.getElementsByTagName(n)[0]);
+        (e.async = 1),
+          (e.src = u + "/nta.js?nta_nc=" + s),
+          d.parentNode.insertBefore(e, d);
+      })(
+        window,
+        document,
+        "script",
+        "_NTA",
+        "https://n61.nsmartta.com",
+        "NTA80434945"
+      );
+
+      function mobRf() {
+        var rf = new EN();
+        rf.setData("userid", "wizschool");
+        rf.setSSL(true);
+        rf.sendRf();
+      }
+    </script>
+    <!-- End NsmartTA Common Script -->
+
+    <script
+      src="https://cdn.megadata.co.kr/js/en_script/3.6/enliple_min3.6.js"
+      defer="defer"
+      onload="mobRf()"
+    ></script>
+    <script src="//cdn.jsdelivr.net/bluebird/3.5.0/bluebird.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/url-search-params/1.1.0/url-search-params.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.js?features=es5,es6,es2016,es2017|gated&flags=gated&unknown=polyfill&callback=onPolyfillsLoad"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"
+    ></script>
+
+    <!-- python Editor -->
+    <script src="%PUBLIC_URL%/ace/ace.js"></script>
+    <script src="%PUBLIC_URL%/ace/ext-language_tools.js"></script>
+    <script src="%PUBLIC_URL%/ace/wizschool-theme.js"></script>
+    <script src="%PUBLIC_URL%/ace/wizschool-theme-light.js"></script>
+
+    <!-- python Camera -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/6.4.0/adapter.min.js"
+    ></script>
+    <script src="%PUBLIC_URL%/janus.js"></script>
+
+    <script>
+      function setViewPortSize() {
+        const viewport = document.getElementById("viewport");
+        const width = Math.max(
+          document.documentElement.clientWidth,
+          window.innerWidth || 0
+        );
+
+        if (width < 1250) {
+          if (width >= 768 && width < 1250) {
+            viewport.setAttribute("content", "width=1250");
+          } else if (width !== 1250) {
+            viewport.setAttribute("content", "width=device-width");
+          }
+        }
+      }
+      setViewPortSize();
+      window.onload = function () {
+        setViewPortSize();
+      };
+      window.onresize = function () {
+        setViewPortSize();
+      };
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-132407065-2");
+
+      if (!Array.prototype.includes) {
+        Object.defineProperty(Array.prototype, "includes", {
+          enumerable: false,
+          value: function (obj) {
+            var newArr = this.filter(function (el) {
+              return el == obj;
+            });
+            return newArr.length > 0;
+          },
+        });
+      }
+      if (!Array.prototype.find) {
+        Object.defineProperty(Array.prototype, "find", {
+          value: function (predicate) {
+            if (this == null) {
+              throw new TypeError('"this" is null or not defined');
+            }
+            var o = Object(this);
+            var len = o.length >>> 0;
+            if (typeof predicate !== "function") {
+              throw new TypeError("predicate must be a function");
+            }
+            var thisArg = arguments[1];
+            var k = 0;
+            while (k < len) {
+              var kValue = o[k];
+              if (predicate.call(thisArg, kValue, k, o)) {
+                return kValue;
+              }
+              k++;
+            }
+            return undefined;
+          },
+        });
+      }
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NT3QN4D00X"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NT3QN4D00X");
+    </script>
+
+    <!-- End Google Tag Manager -->
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- LOGGER(TM) TRACKING SCRIPT V.40 FOR logger.co.kr / 105005 : COMBINE TYPE / DO NOT ALTER THIS SCRIPT. -->
+    <script type="text/javascript">
+      var _TRK_LID = "105005";
+      var _L_TD = "ssl.logger.co.kr";
+      var _TRK_CDMN = ".wizlive.com";
+    </script>
+    <script type="text/javascript">
+      try {
+        var _CDN_DOMAIN =
+          location.protocol == "https:"
+            ? "https://fs.bizspring.net"
+            : "http://fs.bizspring.net";
+        (function (b, s) {
+          var f = b.getElementsByTagName(s)[0],
+            j = b.createElement(s);
+          j.async = true;
+          j.src = "//fs.bizspring.net/fs4/bstrk.1.js";
+          f.parentNode.insertBefore(j, f);
+        })(document, "script");
+      } catch (e) {}
+    </script>
+    <noscript
+      ><img
+        alt="Logger Script"
+        width="1"
+        height="1"
+        src="http://ssl.logger.co.kr/tracker.1.tsp?u=105005&amp;js=N"
+    /></noscript>
+    <!-- END OF LOGGER TRACKING SCRIPT -->
+
+    <script>
+      function setBizSpring(type) {
+        // // 2종류 type
+        // // 1.RGR(회원가입) , 2.ODR(무료체험)
+        // let bizSpring = document.createElement("script");
+        // bizSpring._TRK_PI = type;
+        // bizSpring._TRK_SX = "";
+        // bizSpring._TRK_AG = "";
+        try {
+          var bizSpring = document.createElement("script");
+          bizSpring.type = "text/javascript";
+          bizSpring.innerHTML =
+            'var _TRK_PI = "' + type + '"; var _TRK_SK=""; var _TRK_AG="";';
+
+          $("head").append(bizSpring);
+        } catch (e) {}
+      }
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "2507761166218118");
+      fbq("track", "PageView");
+    </script>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Start Naver Analytics -->
+    <script
+      type="text/javascript"
+      src="https://wcs.naver.net/wcslog.js"
+    ></script>
+    <script type="text/javascript">
+      if (!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "24244704bb971";
+      if (window.wcs) {
+        wcs_do();
+      }
+    </script>
+    <!-- End Naver Analytics -->
+
+    <title>파이썬 test</title>
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T7LTP29"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div id="alert"></div>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <script type="text/javascript">
+      (function (w, d, a) {
+        w.__beusablerumclient__ = {
+          load: function (src) {
+            var b = d.createElement("script");
+            b.src = src;
+            b.async = true;
+            b.type = "text/javascript";
+            d.getElementsByTagName("head")[0].appendChild(b);
+          },
+        };
+        w.__beusablerumclient__.load(a);
+      })(
+        window,
+        document,
+        "//rum.beusable.net/script/b210222e105514u306/353ede6f50"
+      );
+    </script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!-- ActiveCampaign -->
+    <script type="text/javascript">
+      (function (e, t, o, n, p, r, i) {
+        e.visitorGlobalObjectAlias = n;
+        e[e.visitorGlobalObjectAlias] =
+          e[e.visitorGlobalObjectAlias] ||
+          function () {
+            (e[e.visitorGlobalObjectAlias].q =
+              e[e.visitorGlobalObjectAlias].q || []).push(arguments);
+          };
+        e[e.visitorGlobalObjectAlias].l = new Date().getTime();
+        r = t.createElement("script");
+        r.src = o;
+        r.async = true;
+        i = t.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(r, i);
+      })(
+        window,
+        document,
+        "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js",
+        "vgo"
+      );
+      vgo("setAccount", "1001601248");
+      vgo("setTrackByDefault", true);
+      vgo("process");
+    </script>
   </body>
 </html>

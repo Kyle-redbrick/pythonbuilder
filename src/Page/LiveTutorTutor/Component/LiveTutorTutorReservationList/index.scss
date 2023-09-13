@@ -1,0 +1,73 @@
+.LiveTutorTutor__ReservationList {
+  .line {
+    margin-bottom: 15px;
+  }
+
+  .Reservations {
+    width: 100%;
+    margin: auto;
+    .CountWrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .Count {
+      font-size: 18px;
+      font-weight: 500;
+      margin-right: 5px;
+    }
+
+    .Empty {
+      align-items: center;
+      color: #8e8e93;
+      display: flex;
+      height: 200px;
+      justify-content: center;
+    }
+  }
+
+  .LiveTutorStudent--EnvTest {
+    text-align: right;
+    margin-bottom: 12px;
+  }
+  .LiveTutorStudent--EnvTest--image {
+    margin: 0 auto;
+    margin-bottom: 4px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../../../Image/headset.svg");
+  }
+  .LiveTutorStudent--EnvTest--button {
+    width: 100px;
+    height: 70px;
+    border-radius: 7px;
+    border: solid 1px #d9d9d9;
+    background-color: #ffffff;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .More {
+    text-align: center;
+    color: #c0c0c0;
+    h4 {
+      margin-top: 14px;
+    }
+  }
+  .More:hover {
+    color: #8e8e93;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .Reservations {
+      width: 100%;
+      max-width: 600px;
+      min-width: 320px;
+    }
+
+    .LiveTutorStudent--EnvTest {
+      display: none;
+    }
+  }
+}

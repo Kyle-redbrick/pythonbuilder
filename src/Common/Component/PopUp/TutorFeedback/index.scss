@@ -1,0 +1,12 @@
+.popup_tutorfeedback {
+  text-align: center;
+  width: 940px;
+  // max-height: 700px;
+  // padding: 0 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .popup_tutorfeedback {
+    width: 100%;
+  }
+}

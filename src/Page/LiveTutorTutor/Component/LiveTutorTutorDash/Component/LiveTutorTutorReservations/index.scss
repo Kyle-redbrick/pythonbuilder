@@ -1,0 +1,43 @@
+.LiveTutorTutor__Reservations {
+  padding-bottom: 7px;
+
+  .LiveTutorTutor__Reservation {
+    border-radius: 7px;
+    display: inline-block;
+    padding: 7px;
+    text-align: center;
+    width: 16.6%;
+
+    .LiveTutorTutor__ReservationImage {
+      margin-top: 14px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  .LiveTutorTutor__Reservation:hover {
+    background-color: #f4f4f4;
+  }
+
+  .LiveTutorTutor__Reservations__Empty {
+    align-items: center;
+    color: #8e8e93;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .LiveTutorTutor__Reservations {
+    padding-bottom: 0px;
+
+    .LiveTutorTutor__Reservation {
+      display: none;
+    }
+    .LiveTutorTutor__Reservations__Empty {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="180" height="180" fill="white"/>
+<path d="M147 76H117C110.373 76 105 81.3726 105 88V154C105 160.627 110.373 166 117 166H147C153.627 166 159 160.627 159 154V88C159 81.3726 153.627 76 147 76Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M129 154H135" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M141 67V34C141 32.4087 140.368 30.8826 139.243 29.7574C138.117 28.6321 136.591 28 135 28H27C25.4087 28 23.8826 28.6321 22.7574 29.7574C21.6321 30.8826 21 32.4087 21 34V106C21 107.591 21.6321 109.117 22.7574 110.243C23.8826 111.368 25.4087 112 27 112H96" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M63 112L57 136" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M48 136H96" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M21 94H96" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M45 40H33V52" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M45 40H33V52" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M33 58V64" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M33 58V64" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M117 40H129V52" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M117 40H129V52" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M129 58V64" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<path d="M129 58V64" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<rect x="115" y="86" width="34" height="62" rx="5" stroke="black" stroke-width="2"/>
+<path d="M97.0885 64.8489C97.0885 72.8737 90.5886 79.3931 82.5442 79.3931C74.5195 79.3931 68 72.8933 68 64.8489C68 56.8242 74.4998 50.3047 82.5442 50.3047C90.5681 50.3047 97.0885 56.8251 97.0885 64.8489Z" stroke="#2F69FF" stroke-width="2"/>
+<path d="M89.3195 64.8512L84.2381 67.7885L79.1567 70.7259V64.8512V58.9766L84.2381 61.9139L89.3195 64.8512Z" stroke="#2F69FF" stroke-width="2"/>
+</svg>

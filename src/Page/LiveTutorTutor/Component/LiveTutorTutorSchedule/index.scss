@@ -1,0 +1,543 @@
+.LiveTutorTutor__Schedule {
+  cursor: default;
+
+  .MonthPicker {
+    margin: 20px 0;
+    display: flex;
+    h4 {
+      margin: auto 0;
+    }
+    .MonthPicker__Arrow {
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: 24px;
+      margin: auto 14px;
+      width: 24px;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+    .MonthPicker__Arrow:hover {
+      background-color: #ebebeb;
+    }
+    .left {
+      transform: scaleX(-1);
+      background-image: url("../../../../Image/arrow-right.svg");
+    }
+    .right {
+      background-image: url("../../../../Image/arrow-right.svg");
+    }
+  }
+
+  .DatePicker {
+    margin: 14px 14px 30px;
+    ul {
+      padding: 0px;
+      margin: 0px;
+      list-style-type: none;
+      display: flex;
+    }
+    li {
+      display: inline-block;
+      width: 3.1%;
+      text-align: center;
+    }
+    .header {
+      width: 36px;
+      height: 36px;
+      position: absolute;
+      background-color: #ffffff;
+    }
+
+    .DatePicker__Days {
+      li {
+        font-size: 10px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.38);
+        background-color: #ffffffdd;
+      }
+      .Sunday,
+      .Saturaday {
+        color: #ff5a60;
+      }
+      .holiday {
+        color: #ff5a60;
+      }
+    }
+
+    .DatePicker__Dates {
+      margin: 7px 0px;
+      .DatePicker__Date {
+        cursor: pointer;
+      }
+      .DatePicker__Date:hover {
+        border-radius: 50%;
+        background-color: #ebebeb;
+      }
+      li {
+        font-size: 12px;
+        font-weight: 600;
+        color: #000000;
+        background-color: #ffffffdd;
+        .DatePicker__Date {
+          margin: auto;
+          width: 50%;
+        }
+      }
+      .Sunday,
+      .Saturaday,
+      .holiday {
+        color: #ff5a60;
+      }
+      .Today {
+        color: #32dab4;
+        border-bottom: 2px solid #32dab4;
+        margin-bottom: -2px;
+      }
+    }
+
+    .DatePicker__Times {
+      margin-top: 7px;
+      line-height: 32px;
+      li {
+        height: 36px;
+        font-size: 10px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.38);
+        background-color: #ffffffdd;
+        .DatePicker__Hour {
+          margin: auto auto;
+          width: 95%;
+          height: 95%;
+          cursor: pointer;
+        }
+        .DatePicker__Hour:hover {
+          background-color: #ebebeb;
+        }
+        .DatePicker__Time {
+          margin: auto auto;
+          width: 95%;
+          height: 95%;
+          border: solid 1px #ebebeb;
+          cursor: pointer;
+        }
+        .isAfter {
+          background-color: #ebebeb;
+        }
+        .isAfter.isOn,
+        .isAfter.isFixed,
+        .isAfter.isReserved {
+          background-color: #3a405b;
+        }
+        .isBefore:hover {
+          background-color: #ebebeb;
+        }
+        .isBefore.isOn {
+          background-color: #1482f4;
+        }
+        .isBefore.isOn:hover {
+          opacity: 0.8;
+        }
+        .isBefore.isReserved {
+          background-color: #ffbd1f;
+        }
+        .isBefore.isFixed {
+          background-color: #23D8AF;
+        }
+      }
+    }
+  }
+
+  .ButtonTab {
+    margin: 0px 14px;
+    height: 68px;
+    float: right;
+    .button {
+      margin: 0px 8px;
+      color: #ffffff;
+      border-radius: 10px;
+      border-width: 0px;
+      font-size: 18px;
+      font-weight: bold;
+      height: 100%;
+      width: 302px;
+      float: right;
+      outline: none;
+      cursor: pointer;
+    }
+    .button:hover {
+      opacity: 0.8;
+    }
+    .complete {
+      background: #DBDBDB;
+      &.active {
+        background-color: #2F69FF;
+      }
+    }
+    .cancel {
+      width: 166px;
+      background-color: transparent;
+      color: #2F69FF;
+      border: 1.4px solid #2F69FF;
+      border-radius: 10px;
+    }
+  }
+
+  .Categories {
+    .Category {
+      display: flex;
+      margin: 4px 7px;
+      width: 160px;
+      h5 {
+        font-weight: normal;
+        font-size: 14px;
+        color: #4a4a4a;
+      }
+      .Category_Paint {
+        width: 14px;
+        height: 14px;
+        margin: 2px 7px 7px 7px;
+        border: solid 1px #ebebeb;
+      }
+      .past {
+        background-color: #3a405b;
+      }
+      .pastRegistered {
+        background-color: #ebebeb;
+      }
+      .registerable {
+        background-color: #ffffff;
+      }
+      .registered {
+        background-color: #1482f4;
+      }
+      .noncancelable {
+        background-color: #ffbd1f;
+      }
+      .fixed {
+        background-color: #23D8AF;
+      }
+    }
+  }
+
+  .scheduled_count {
+    margin: 0 0 28px 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #212121;
+  }
+
+  .scheduled_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+  }
+
+  .live-tutor-schedule {
+    margin-top: 30px;
+  }
+
+  .live-tutor-schedule__info {
+    position: relative;
+    width: 1200px;
+    min-height: 237px;
+    border-radius: 14px;
+  }
+
+  .live-tutor-schedule__title {
+    margin-bottom: 22px;
+    line-height: 18px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: #212121;
+    span {
+      margin-left: 10px;
+      color: #2F69FF;
+    }
+  }
+
+  .add-schedule-btn {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 147px;
+    line-height: 33px;
+    background: #2F69FF;
+    border-radius: 59px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    img {
+      margin-right: 3px;
+    }
+  }
+
+  .schedule-box--default {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    margin-top: 26px;
+    background: #F0F3F7;
+    border-radius: 14px;
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 27px;
+      }
+    }
+    .add-schedule-btn {
+      position: relative;
+      top: 20px;
+      right: unset;
+    }
+  }
+
+  .schedule-box {
+    height: 100%;
+  }
+
+  .schedule-box__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    > li {
+      box-sizing: border-box;
+      width: 164px;
+      min-height: 260px;
+      padding: 10px 10px 0 10px;
+      background: #F0F3F7;
+      border-radius: 14px;
+      > ul {
+        max-height: 220px;
+        overflow-y: auto;
+      }
+    }
+  }
+
+  .schedule-box__list--mobile {
+    display: none;
+  }
+
+  .schedule-box__list__day {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #717171;
+  }
+
+  .schedule-box__list__box,
+  .schedule-box__list__box--default,
+  .schedule-box__list__mobile__box--default {
+    box-sizing: border-box;
+    line-height: 25px;
+    height: 29px;
+    background: #FFFFFF;
+    border: 0.8px solid #E5E9ED;
+    border-radius: 5px;
+    text-align: center;
+    + .schedule-box__list__box {
+      margin-top: 5px;
+    }
+  }
+
+  .schedule-box__list__box--default,
+  .schedule-box__list__mobile__box--default {
+    border: 1px dashed #C2C9D8;
+    background-color: transparent;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: -0.02em;
+    color: #949AA7;
+  }
+
+  .schedule-box__list__time,
+  .schedule-box__list__date {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    color: #212121;
+  }
+
+  .schedule-box__list__date {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 11px;
+    color: #717171;
+  }
+
+  .live-tutor-schedule__list {
+    margin: 18px 0 30px;
+    li {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    li:first-child {
+      font-weight: 700;
+      color: #FF5A60;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .MonthPicker {
+      margin: 22px 0 14px 16px;
+    }
+
+    .DatePicker {
+      margin: 14px 14px 20px;
+      overflow-x: scroll;
+      .DatePicker__Container {
+        width: 36 * 32px;
+      }
+      li {
+        display: inline-block;
+        width: 36px;
+        text-align: center;
+      }
+    }
+
+    .Categories {
+      float: none;
+      margin: 30px 0 110px 16px;
+      .scheduled_count {
+        margin: 0 0 20px 0;
+      }
+    }
+
+    .ButtonTab {
+      margin: 0px;
+      padding: 0px 16px;
+      float: none;
+      .button {
+        margin: 0;
+        font-size: 14px;
+      }
+      .button.complete {
+        width: calc(192 / 328 * 100%);
+        margin-left: calc(16 / 328 * 100%);
+      }
+      .button.cancel {
+        width: calc(120 / 328 * 100%);
+      }
+    }
+
+    .live-tutor-schedule__info {
+      width: 100%;
+      padding: 0;
+      background: #ffffff;
+    }
+
+    .live-tutor-schedule__title {
+      margin-bottom: 20px;
+      padding-left: 16px;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+      color: #212121;
+    }
+
+    .schedule-box--default {
+      justify-content: center;
+      height: 187px;
+      margin: 0;
+      font-size: 14px;
+      > div img {
+        margin-bottom: 4px;
+      }
+    }
+
+    .schedule-box {
+      background: #F0F3F7;
+      min-height: 250px;
+      max-height: 250px;
+      overflow: hidden;
+    }
+
+    .live-tutor-schedule__list {
+      margin: 18px 16px 30px;
+    }
+
+    .line {
+      width: calc(100% - 32px);
+    }
+
+    .add-schedule-btn {
+      right: 16px;
+    }
+
+    .scheduled_list {
+      width: 100%;
+      .Category {
+        width: 45%;
+      }
+    }
+
+    .schedule-box__list {
+      display: none;
+    }
+
+    .schedule-box__list--mobile {
+      display: block;
+    }
+    .schedule-box__list--mobile__tabs {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 19px 22px;
+    }
+    .schedule-box__list--mobile__boxes {
+      max-height: 164px;
+      overflow-y: auto;
+    }
+    .schedule-box__list--mobile__day {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #ffffff;
+      border-radius: 50%;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      color: #646464;
+      border: 1.6px solid transparent;
+      cursor: pointer;
+      &.active {
+        font-weight: 700;
+        color: #2F69FF;
+        border: 1.6px solid #2F69FF;
+      }
+    }
+    .schedule-box__list__mobile__box,
+    .schedule-box__list__mobile__box--default {
+      margin: 0 16px;
+      padding: 0 16px;
+      text-align: center;
+    }
+
+    .schedule-box__list__mobile__box {
+      background: #FFFFFF;
+      line-height: 25px;
+      height: 29px;
+      margin-bottom: 8px;
+      border: 0.8px solid #E5E9ED;
+      border-radius: 5px;
+    }
+
+    .schedule-box__list__mobile__box--default {
+      height: 148px;
+      line-height: 148px;
+    }
+  }
+}

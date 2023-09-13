@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow drop down_btn</title>
+    <desc>Created with Sketch.</desc>
+    <g id="--dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dashboard_empty" transform="translate(-1638.000000, -13.000000)" fill="#3A405B">
+            <g id="header">
+                <g id="arrow-dropup_btn" transform="translate(1650.000000, 24.529412) rotate(-180.000000) translate(-1650.000000, -24.529412) translate(1638.000000, 12.529412)">
+                    <polygon id="Shape" points="7 9.75490196 12 14.754902 17 9.75490196"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

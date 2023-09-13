@@ -1,0 +1,12 @@
+.popup_onebutton {
+  text-align: center;
+  width: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  .popup_onebutton {
+    // margin-top: 30vh;
+    margin-top: 50px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,82 @@
+.studentProgress {
+  display: flex;
+  padding: 24px;
+  margin-bottom: 36px;
+  border-radius: 7px;
+  border: solid 1px #ebebeb;
+  background-color: var(--white);
+  .Profile_Image {
+    margin: auto 18px auto 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 1px solid #ebebeb;
+    object-fit: cover;
+  }
+  .Profile_Middle {
+    margin: auto 0;
+    font-size: 18px;
+    .Profile_Name {
+      font-weight: bold;
+      color: #101010;
+    }
+    .Profile_Pub {
+      margin-top: 3px;
+      display: flex;
+    }
+    .Profile_PubTitle {
+      color: #101010;
+    }
+    .Profile_PubCount {
+      margin-left: 6px;
+      font-weight: bold;
+      color: #23d8af;
+    }
+  }
+  .Profile_Progress {
+    margin: auto 0 auto auto;
+    width: 50%;
+    max-width: 360px;
+    .Profile_Progress_Number {
+      margin-left: 12px;
+      display: flex;
+      .Profile_Progress_Number_Current {
+        font-size: 20px;
+        font-weight: bold;
+        color: #23d8af;
+      }
+      .Profile_Progress_Number_Total {
+        margin-top: 9px;
+        margin-left: 3px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #9b9b9b;
+      }
+    }
+    .Profile_Progress_Bar {
+      margin: 3px 6px 0px 6px;
+      height: 16px;
+      .Profile_Progress_Bar_Back {
+        height: 100%;
+        border-radius: 8px;
+        background-color: #ebebeb;
+      }
+      .Profile_Progress_Bar_Front {
+        height: 100%;
+        border-radius: 8px;
+        background-color: #23d8af;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .studentProgress {
+    display: block;
+    .Profile_Progress {
+      width: 100%;
+      margin-top: 18px;
+      max-width: none;
+    }
+  }
+}

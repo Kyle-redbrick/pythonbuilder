@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron_left</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="7.69230769e-05 0.000115384615 11.62 0.000115384615 11.62 19.3937692 7.69230769e-05 19.3937692"></polygon>
+    </defs>
+    <g id="wizschool-1.1v" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landscape-1" transform="translate(-928.000000, -955.000000)">
+            <g id="chevron_left" transform="translate(940.000000, 962.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M1.92315385,19.3937692 C1.43084615,19.3937692 0.938538462,19.2060769 0.563153846,18.8306923 C-0.187615385,18.0799231 -0.187615385,16.8622308 0.563153846,16.1106923 L6.977,9.69684615 L0.563153846,3.283 C-0.187615385,2.53146154 -0.187615385,1.31453846 0.563153846,0.563769231 C1.31469231,-0.187769231 2.53161538,-0.187769231 3.28315385,0.563769231 L11.057,8.33684615 C11.8077692,9.08761538 11.8077692,10.3053077 11.057,11.0560769 L3.28315385,18.8306923 C2.90776923,19.2060769 2.41546154,19.3937692 1.92315385,19.3937692" id="Fill-1" fill="#3A405B" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

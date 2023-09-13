@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="50" viewBox="0 0 200 50">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="50" fill="#22222C" rx="25"/>
+        <text fill="#FFF" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="20" font-weight="bold" opacity=".922">
+            <tspan x="82.1" y="30">목록</tspan>
+        </text>
+    </g>
+</svg>

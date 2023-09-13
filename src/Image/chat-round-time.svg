@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+    <defs>
+        <filter id="a" width="185.3%" height="164.4%" x="-42.6%" y="-32.2%" filterUnits="objectBoundingBox">
+            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(-10 -159)">
+        <path d="M10 159h10v10H10z"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M14.996 159.833A4.165 4.165 0 0 0 10.833 164c0 2.3 1.863 4.167 4.163 4.167a4.17 4.17 0 0 0 4.17-4.167 4.17 4.17 0 0 0-4.17-4.167zm.004 7.5a3.332 3.332 0 1 1 0-6.666 3.332 3.332 0 1 1 0 6.666zm-.092-5.416h-.025c-.166 0-.3.133-.3.3v1.966c0 .146.075.284.204.359l1.73 1.037a.297.297 0 0 0 .408-.1.296.296 0 0 0-.104-.412l-1.613-.959v-1.891c0-.167-.133-.3-.3-.3z"/>
+    </g>
+</svg>

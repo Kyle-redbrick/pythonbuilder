@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="12px" viewBox="0 0 13 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>animation_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="lab-1.4-ver." stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landscape-:-qr-code-2.0ver" transform="translate(-1088.000000, -931.000000)" fill="#E3E8F0">
+            <g id="Group-21" transform="translate(1083.500000, 926.000000)">
+                <g id="animation" transform="translate(5.000000, 5.000000)">
+                    <path d="M3.6,0 C2.94,0 2.4,0.54 2.4,1.2 L2.4,8.4 C2.4,9.06 2.94,9.6 3.6,9.6 L10.8,9.6 C11.46,9.6 12,9.06 12,8.4 L12,1.2 C12,0.54 11.46,0 10.8,0 L3.6,0 Z" id="Path"></path>
+                    <path d="M-5.32907052e-15,2.4 L-5.32907052e-15,10.8 C-5.32907052e-15,11.46 0.54,12 1.2,12 L9.6,12 L9.6,10.8 L1.2,10.8 L1.2,2.4 L-5.32907052e-15,2.4 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

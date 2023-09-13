@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>text_defult</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 24 0 24 23.99988 0 23.99988"></polygon>
+    </defs>
+    <g id="wizlab-interface-1.1-v" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="guide-2" transform="translate(-769.000000, -206.000000)">
+            <g id="text" transform="translate(769.000000, 206.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M16.452,19.05588 L15.3732,16.19988 L8.604,16.19988 L7.536,19.04388 C7.368,19.49988 6.936,19.79988 6.444,19.79988 C5.628,19.79988 5.064,18.97308 5.364,18.21588 L10.464,5.24388 C10.728,4.60788 11.328,4.19988 12,4.19988 C12.6732,4.19988 13.2732,4.60788 13.524,5.24388 L18.624,18.21588 C18.924,18.97308 18.36,19.79988 17.544,19.79988 C17.0652,19.79988 16.6308,19.49988 16.452,19.05588 Z M21.6,-0.00012 L2.4,-0.00012 C1.08,-0.00012 0,1.07988 0,2.39988 L0,21.59988 C0,22.91988 1.08,23.99988 2.4,23.99988 L21.6,23.99988 C22.92,23.99988 24,22.91988 24,21.59988 L24,2.39988 C24,1.07988 22.92,-0.00012 21.6,-0.00012 Z M9.516,13.79988 L14.484,13.79988 L12,7.17588 L9.516,13.79988 Z" id="Fill-1" fill="#3A405B" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

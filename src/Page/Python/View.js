@@ -88,7 +88,10 @@ export default function (props) {
         handleGetCodeData={handleGetCodeData}
         currentCode={currentCode}
       />
-      <PythonRightBar handleToggleThumbnail={handleToggleThumbnail} userType={userType} />
+      <PythonRightBar
+        handleToggleThumbnail={handleToggleThumbnail}
+        userType={userType}
+      />
       <PythonBottomBar />
 
       {isOpenThumbnail && (
@@ -126,10 +129,18 @@ export default function (props) {
         isShowLessonEndPopup) && <div className="overlay" />}
 
       {isShowRatingPopup && (
-        <Rating handlePopupShow={handlePopupShow} reservationId={reservationId} tutorEmail={tutorEmail} />
+        <Rating
+          handlePopupShow={handlePopupShow}
+          reservationId={reservationId}
+          tutorEmail={tutorEmail}
+        />
       )}
-      {isShowRatingCompletePopup && <RatingComplete handlePopupShow={handlePopupShow} />}
-      {isShowLessonFeedbackPopup && <LessonFeedback handleCloseTab={handleCloseTab} />}
+      {isShowRatingCompletePopup && (
+        <RatingComplete handlePopupShow={handlePopupShow} />
+      )}
+      {isShowLessonFeedbackPopup && (
+        <LessonFeedback handleCloseTab={handleCloseTab} />
+      )}
 
       {isShowLessonEndPopup && (
         <LessonEnd

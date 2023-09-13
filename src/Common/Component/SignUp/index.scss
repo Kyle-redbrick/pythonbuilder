@@ -1,0 +1,388 @@
+.SignupContainer {
+  z-index: 200;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+
+  .SignupContainer__overlay {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+  }
+  .SignupContainer__main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 780px;
+    height: 730px;
+  }
+
+  // // SignupModal // //
+  .SignupModal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    padding-top: 24px;
+    padding-right: 32px;
+    padding-left: 40px;
+    padding-bottom: 65px;
+  }
+
+  .SignupModal__row__img {
+    width: 357px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .SignupModal__img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+  }
+  .SignupModal__row__text {
+    width: 300px;
+    height: calc(100% - 99px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-right: 51px;
+    position: relative;
+  }
+
+  .SignupModal__title {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: -0.21px;
+    color: #222222;
+    text-align: center;
+    width: 100%;
+  }
+
+  .SignupModal__sub__title {
+    opacity: 0.4;
+    font-size: 12px;
+    letter-spacing: -0.13px;
+    text-align: center;
+    color: #222222;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .SignupModal__closeBtn {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url("../../../Image/close-btn-login.svg");
+    background-position: center;
+    cursor: pointer;
+    right: 0;
+    position: absolute;
+    top: 33px;
+    right: 33px;
+  }
+
+  /** SignupForm */
+  .SignupForm {
+    width: 100%;
+    margin-top: 22px;
+  }
+
+  .SignupForm__input {
+    height: 48px;
+    border-radius: 4px;
+    border: solid 1px #c0c0c0;
+    padding: 11px 27px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.25;
+    letter-spacing: -0.17px;
+    background-color: white;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .input--warning__on {
+    border: solid 1px red;
+  }
+  .input--warning__off {
+    border: solid 1px #c0c0c0;
+  }
+  input::placeholder {
+    opacity: 0.3;
+  }
+  .readonly--on {
+    background-color: #cccccc;
+    border: none;
+    opacity: 0.6;
+  }
+  .SignupForm__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .SignupFormMsg {
+    font-size: 12px;
+    color: #f05c63;
+    width: 100%;
+    position: relative;
+    top: -8px;
+    padding-left: 8px;
+  }
+  .SignupFormBtn {
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.25;
+    letter-spacing: -0.17px;
+    color: #ffffff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  .SignupFormBtn--on {
+    background-color: #63baf5;
+  }
+  .SignupFormBtn--off {
+    background-color: #cccccc;
+  }
+
+  .SignupFormBtn--mobile {
+    width: 95px;
+    height: 48px;
+    margin-left: 8px;
+  }
+  .SignupFormBtn--submit {
+    width: 100%;
+    height: 48px;
+    margin-top: 22px;
+    margin-bottom: 16px;
+    background-color: #63baf5;
+  }
+
+  .SignupModal__bottomline {
+    opacity: 0.6;
+    font-size: 11px;
+    letter-spacing: -0.21px;
+    color: #222222;
+    margin-top: 5px;
+    line-height: 1.5;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .SignupModal__link {
+    cursor: pointer;
+    letter-spacing: -0.13px;
+    text-align: center;
+    color: #ff8225;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+  .SignupModal__link__login {
+    color: #222222;
+    text-align: right;
+  }
+
+  // // WelcomeModal // //
+  .SignupContainer__welcome {
+    position: relative;
+    z-index: 2;
+    width: 840px;
+  }
+
+  .SignupModal__input__checkbox {
+    display: flex;
+    opacity: 0.6;
+    font-size: 11px;
+    letter-spacing: -0.21px;
+    color: #222222;
+    margin-top: 5px;
+    line-height: 1.5;
+    width: 100%;
+    cursor: pointer;
+
+    input[type="checkbox"] {
+      cursor: pointer;
+    }
+  }
+
+  .WelcomeModal {
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .WelcomeModal__inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+    padding-left: 37px;
+    padding-right: 34px;
+    padding-bottom: 45px;
+    position: relative;
+  }
+
+  .WelcomeModal__closeBtn {
+    position: absolute;
+    right: 26px;
+    top: 26px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../../../Image/close-btn-login.svg");
+    background-position: center;
+    cursor: pointer;
+  }
+  .WelcomeModal__logo {
+    width: 197.3px;
+    height: 26.5px;
+    margin-bottom: 100px;
+  }
+  .WelcomeModal__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.36;
+    color: #3a405b;
+    text-align: center;
+  }
+  .WelcomeModal__desc {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2;
+    text-align: center;
+    color: #3a405b;
+  }
+  .WelcomeModal__enterBtn {
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.39;
+    text-align: center;
+    color: #ffffff;
+    background-color: #63baf5;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    width: 30%;
+    height: 43px;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    border: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    .SignupContainer__main {
+      width: 100%;
+      height: 100%;
+    }
+    .SignupModal {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;
+      padding: 26px 26px 41px 26px;
+    }
+
+    .SignupModal__title {
+      margin-top: 5vh;
+      text-align: left;
+    }
+    .SignupModal__closeBtn {
+      right: 26px;
+      top: 26px;
+    }
+    .SignupModal__row__img {
+      display: none;
+    }
+    .SignupModal__row__text {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: static;
+      margin-right: 0;
+    }
+    .SignupForm {
+      margin-top: 10%;
+    }
+
+    .SignupFormBtn--submit {
+      margin-top: 20%;
+    }
+    .SignupModal__link__login {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    // // WelcomeModal // //
+    .SignupContainer__welcome {
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .WelcomeModal {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;
+    }
+
+    .WelcomeModal__row1 {
+      display: none;
+    }
+    .WelcomeModal__row2 {
+      width: 100%;
+      max-width: 375px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: static;
+    }
+    .WelcomeModal__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 18px 0 0 18px;
+    }
+  }
+}

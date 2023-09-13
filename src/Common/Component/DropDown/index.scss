@@ -1,0 +1,77 @@
+// FontDropDown
+.DD {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.DD__header {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.DD__defaultValue {
+  font-size: 16px;
+  color: #c0c0c0;
+  padding-left: 8px;
+}
+.DD__title {
+  padding-left: 8px;
+}
+.DD__arrow {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.DD__arrow--on {
+  background-image: url("../../../Image/arrow-up-btn@2x.png");
+  background-size: cover;
+}
+
+.DD__arrow--off {
+  background-image: url("../../../Image/arrow-down-btn@2x.png");
+  background-size: cover;
+}
+
+.DD__body {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+}
+.DD__list {
+  display: flex;
+  flex-direction: column;
+  max-height: 370px;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  position: relative;
+}
+.DD__item {
+  display: flex;
+  align-items: center;
+  // width: 100%;
+  height: 50px;
+  min-height: 50px;
+  padding-left: 8px;
+
+  font-size: 18px;
+  color: #8592a6;
+  cursor: pointer;
+}
+.DD__item--on {
+  background-color: #f0f2f7;
+}
+
+@media screen and (max-width: 1199px) {
+  // .DD__item {
+  //   padding-left: 0px;
+  //   justify-content: center;
+  // }
+}

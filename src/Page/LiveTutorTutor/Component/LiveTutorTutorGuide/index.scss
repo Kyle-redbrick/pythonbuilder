@@ -1,0 +1,60 @@
+.LiveTutorTutor__Guide {
+  .Guide {
+    border-radius: 7px;
+    background-color: #f2f4f4;
+    margin-top: 30px;
+    .Guide__Inner {
+      padding: 30px 20px 30px 20px;
+      padding-bottom: 10px;
+
+      .Guide--title {
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .Guide__List {
+        line-height: 40px;
+
+        .Guide__List--item {
+          display: flex;
+        }
+
+        .Guide__List--icon {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .RegularClass {
+    margin-top: 30px;
+    border-radius: 7px;
+    background-color: #f2f4f4;
+    .RegularClass__Inner {
+      padding: 30px 20px 30px 20px;
+      padding-bottom: 10px;
+
+      .RegularClass--title {
+        font-weight: bold;
+        font-size: 18px;
+        padding-bottom: 20px;
+      }
+
+      .RegularClass__Table {
+        text-align: center;
+
+        th {
+          min-width: 80px;
+          max-width: 150px;
+        }
+      }
+
+      .RegularClass__Table--icon {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  @media screen and (max-width: 1199px) {
+  }
+}

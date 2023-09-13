@@ -1,0 +1,66 @@
+.PopupLessonFeedback {
+  z-index: 10;
+  background-color: #393e4f;
+  height: 224px;
+  width: 480px;
+  top: 30%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px #282c36;
+}
+
+.PopupLessonFeedbackHeader {
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  border-bottom: 1px solid #282c36;
+
+  .HeaderText {
+    font-weight: bold;
+    float: left;
+    margin: 0px 0px 0px 24px;
+  }
+
+  .HeaderImg {
+    float: right;
+    padding-right: 27px;
+    cursor: pointer;
+  }
+}
+
+.PopupLessonFeedbackContent {
+  padding: 24px 0px 0px 24px;
+
+  .PopupLessonFeedbackInfo {
+    line-height: 1.5;
+  }
+}
+
+.PopupLessonFeedbackButton {
+  position: absolute;
+  right: 24px;
+  bottom: 32px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+
+.PopupLessonFeedbackButton.rate {
+  width: 111px;
+  background-color: #1db6ff;
+  border: 1px solid #1db6ff;
+}
+
+.PopupLessonFeedbackButton.next {
+  right: 143px;
+  width: 126px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}

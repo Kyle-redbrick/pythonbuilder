@@ -1,0 +1,98 @@
+.LiveTutorTutor__RatingActivity {
+  .LiveTutorTutor__RatingActivity__Empty {
+    align-items: center;
+    justify-content: center;
+    color: #8e8e93;
+    display: flex;
+    height: 150px;
+  }
+
+  .LiveTutorTutor__Rating {
+    .LiveTutorTutor__Rating__Stars {
+      margin: 4px;
+      display: inline-block;
+
+      .LiveTutorTutor__Rating__Star {
+        border: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 24px;
+        margin: 4px;
+        width: 24px;
+      }
+      .on {
+        background-image: url("../../../../../../Image/star-on.svg");
+      }
+      .off {
+        background-image: url("../../../../../../Image/star-off.svg");
+      }
+    }
+
+    .LiveTutorTutor__Rating__Rating {
+      display: inline-block;
+      margin: 4px;
+      transform: translateY(-35%);
+    }
+  }
+  .LiveTutorTutor__Rating:hover {
+    border-radius: 7px;
+    background-color: #f4f4f4;
+  }
+
+  .LiveTutorTutor__Activity {
+    .LiveTutorTutor__Activity__header {
+      overflow: hidden;
+      padding: 8px;
+      margin-bottom: -4px;
+      .title {
+        color: #8e8e93;
+        float: left;
+      }
+      .subtitle {
+        color: #32dab4;
+        float: right;
+      }
+    }
+    .LiveTutorTutor__Activity__header:hover {
+      border-radius: 7px;
+      background-color: #f4f4f4;
+    }
+
+    .LiveTutorTutor__Activity__Students {
+      box-sizing: border-box;
+      margin-top: 4px;
+
+      .LiveTutorTutor__Activity__Student__Empty {
+        color: #aeaeae;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+      .LiveTutorTutor__Activity__Student {
+        align-items: center;
+        border-radius: 7px;
+        display: inline-block;
+        justify-content: center;
+        padding: 7px;
+        width: 20%;
+        .image {
+          border-radius: 50%;
+          width: 55px;
+          height: 55px;
+          object-fit: cover;
+        }
+        @media screen and (max-width: 1199px) {
+          .image {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+      .LiveTutorTutor__Activity__Student:hover {
+        background-color: #f4f4f4;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>sprite_add_btn</title>
+    <desc>Created with Sketch.</desc>
+    <g id="lab-next-level" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-39">
+            <rect id="Rectangle" fill="#23D8AF" x="0" y="0" width="52" height="52" rx="26"></rect>
+            <line x1="26.5" y1="15.5" x2="26.5" y2="37.5" id="Line-2" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"></line>
+            <line x1="37" y1="26.5" x2="15" y2="26.5" id="Line-2" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>

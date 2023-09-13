@@ -1,0 +1,215 @@
+.flowChart__page {
+  width: 100vw;
+  height: 100vh;
+}
+.flowChart__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  // z-index: 10;
+  display: grid;
+  place-items: center;
+}
+.flowChart__container {
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+.flowChart__menu {
+  width: 20%;
+  min-width: 200px;
+  height: 100%;
+  background-color: #272b37;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.flowChart__menu__top > .flowChart__menu__title {
+  border-top-left-radius: 16px;
+}
+.flowChart__menu__title {
+  color: #ffffff;
+  background-color: #2f3443;
+  font-size: 14px;
+  font-weight: bold;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 32px;
+}
+.flowChart__menu__top {
+  flex: 0.5;
+}
+.flowChart__box {
+  width: 100%;
+  height: calc(100% - 36px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 32px;
+}
+.flowChart__box hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #2f3443;
+}
+.circle-picker {
+  width: 150px !important;
+}
+.circle-picker div {
+  border-radius: 4px !important;
+}
+.flowChart__item h5 {
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.flowChart__item img {
+  cursor: pointer;
+}
+.flowChart__menu__bottom {
+  flex: 0.5;
+}
+.flowChart__grid {
+  width: 100%;
+  height: calc(100% - 36px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  place-items: center;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+}
+.flowChart__grid img {
+  width: 64px;
+  height: 24px;
+  cursor: pointer;
+}
+.flowChart__main {
+  position: relative;
+  width: 80%;
+  min-width: calc(80% - 200px);
+  height: 100%;
+  background-size: 24px 24px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
+.flowChart__cursor__select {
+  cursor: url("../../../../Image/mouse_select.svg"), pointer;
+}
+.flowChart__cursor__pen {
+  cursor: url("../../../../Image/mouse_draw.svg") 10 25, pointer;
+}
+.flowChart__cursor__eraser {
+  cursor: url("../../../../Image/mouse_eraser.svg"), pointer;
+}
+.flowChart__unlock {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  border: 1px solid #393e4f;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+.flowChart__pin {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: #1db6ff url("../../../../Image/pin.svg") no-repeat center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+.flowChart__trash {
+  background: url("../../../../Image/trash.svg") no-repeat center;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  border: 1px solid #fe494a;
+  cursor: pointer;
+  z-index: 1;
+}
+.flowChart__trash__on {
+  background: rgba(254, 73, 74, 0.3) url("../../../../Image/trash.svg")
+    no-repeat center;
+}
+.flowChart__reset {
+  background: url("../../../../Image/reset.svg") no-repeat center;
+  position: absolute;
+  bottom: 120px;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #fe494a;
+  cursor: pointer;
+  z-index: 1;
+}
+.flowChart__close {
+  background: #393e4f url("../../../../Image/close.svg") no-repeat center;
+  position: absolute;
+  top: -55px;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.flowChart__toast {
+  position: absolute;
+  top: -180px;
+  width: 323px;
+  height: 40px;
+  border-radius: 4px;
+  background: #1db6ff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.flowChart__toast span::before {
+  content: url("../../../../Image/python/check.svg");
+  margin-right: 9px;
+}
+.flowChart__toast__on {
+  top: 40px;
+  animation: fadein 0.5s fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

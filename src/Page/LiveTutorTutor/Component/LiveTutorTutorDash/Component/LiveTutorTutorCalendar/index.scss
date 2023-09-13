@@ -1,0 +1,134 @@
+.LiveTutorTutorCalendar {
+  justify-content: center;
+  cursor: default;
+  user-select: none;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .month {
+    width: 100%;
+    text-align: center;
+    h5 {
+      padding-top: 3px;
+    }
+    li {
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    .button {
+      width: 10%;
+      cursor: pointer;
+    }
+    .button:hover {
+      border-radius: 7px;
+      background-color: #f4f4f4;
+    }
+    .prev {
+      float: left;
+    }
+    .next {
+      float: right;
+    }
+  }
+
+  .day {
+    margin-top: 21px;
+    li {
+      display: inline-block;
+      width: 14%;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.38);
+    }
+    .day__inner {
+      border-radius: 50%;
+      margin: auto;
+      width: 28px;
+      height: 28px;
+      display: table;
+      h5 {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .day__inner:hover {
+      background-color: #f4f4f4;
+    }
+    .Sunday {
+      color: #ff5a60;
+    }
+  }
+
+  .date {
+    ul {
+      margin-top: 7px;
+    }
+    li {
+      display: inline-block;
+      width: 14%;
+      text-align: center;
+    }
+    .date__inner {
+      border-radius: 50%;
+      margin: auto;
+      width: 28px;
+      height: 28px;
+      display: table;
+      h5 {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .date__inner:hover {
+      background-color: #f4f4f4;
+    }
+    .date__inner .tooltip {
+      visibility: hidden;
+      margin: 21px 0px;
+      padding: 7px 14px;
+      border-radius: 7px;
+      border: solid 1px #ebebeb;
+      background-color: #ffffff;
+      color: #000000;
+      text-align: left;
+      box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+
+      position: absolute;
+      z-index: 1;
+      left: inherit;
+    }
+    .date__inner:hover .tooltip {
+      visibility: visible;
+    }
+    .Sunday {
+      color: #ff5a60;
+    }
+    .Today {
+      color: #32dab4;
+    }
+    .Other {
+      background-color: #ffffff;
+      color: #d4d1d1;
+    }
+    .Other .date__inner:hover {
+      color: #ffffff;
+    }
+    .Active {
+      background-color: #32dab4;
+      color: #ffffff;
+    }
+    .Active:hover {
+      background-color: #32dab499;
+    }
+    .InActive {
+      background-color: #ebebeb;
+    }
+    .InActive:hover {
+      background-color: #ebebeb99;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>chat_next_wt</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0005 0.0002 15.582 0.0002 15.582 15.175 0.0005 15.175"></polygon>
+    </defs>
+    <g id="0603" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landscape-chat" transform="translate(-1607.000000, -815.000000)">
+            <g id="AI-chat-Copy-4" transform="translate(1579.000000, 84.000000)">
+                <g id="typing" transform="translate(1.000000, 706.000000)">
+                    <g id="Group-17">
+                        <g id="Group-22-Copy-7" transform="translate(27.000000, 11.000000)">
+                            <g id="Group-3-Copy" transform="translate(0.000000, 12.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-2"></g>
+                                <path d="M1.0005,8.5927 L12.1705,8.5927 L9.2895,11.4727 C8.8995,11.8627 8.8995,12.4917 9.2895,12.8827 C9.6805,13.2727 10.3105,13.2727 10.6995,12.8827 L15.2895,8.2927 C15.6805,7.9027 15.6805,7.2727 15.2895,6.8827 L10.6995,2.2927 C10.3105,1.9027 9.6805,1.9027 9.2895,2.2927 C8.8995,2.6827 8.8995,3.3227 9.2895,3.7127 L12.1705,6.5927 L1.0005,6.5927 C0.4495,6.5927 0.0005,7.0427 0.0005,7.5927 C0.0005,8.1427 0.4495,8.5927 1.0005,8.5927 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

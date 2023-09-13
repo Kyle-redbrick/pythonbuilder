@@ -1,0 +1,49 @@
+.Python__Rightbar {
+  width: 100px;
+
+  .Rightbar_Board {
+    color: #ffffff;
+    float: right;
+    border-radius: 50%;
+    margin: 24px 44px 0 0;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    padding: 10px 0px 0px 9px;
+  }
+
+  .RightBarButton_Active {
+    background-color: #1db6ff;
+  }
+
+  .Board_NonActive {
+    background-color: #393e4f;
+  }
+
+  .Rightbar_ZoomIn {
+    color: #ffffff;
+    margin: 24px 44px 0 0;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    padding: 10px 0px 0px 9px;
+  }
+
+  .Rightbar_ZoomOut {
+    color: #ffffff;
+    margin: 24px 44px 0 0;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    padding: 10px 0px 0px 9px;
+  }
+
+  .Rightbar_Align {
+    color: #ffffff;
+    margin: 24px 44px 0 0;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    padding: 10px 0px 0px 9px;
+  }
+}

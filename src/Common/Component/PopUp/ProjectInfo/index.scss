@@ -1,0 +1,105 @@
+.popup_projectinfo {
+  text-align: left;
+  width: 500px;
+
+  .popup_projectinfo_input {
+    display: flex;
+    margin: 24px 12px;
+
+    .popup_projectinfo_input_title {
+      margin-top: 12px;
+      font-weight: bold;
+    }
+    input {
+      height: 42px;
+      margin-left: auto;
+      padding: 12px;
+      width: 360px;
+      font-size: 16px;
+      border: solid 1px #ebebeb;
+      border-radius: 3px;
+      box-sizing: border-box;
+      outline: none;
+    }
+    input::placeholder {
+      color: #c0c0c0;
+    }
+    textarea {
+      margin-left: auto;
+      padding: 12px;
+      width: 360px;
+      height: 120px;
+      font-size: 16px;
+      border: solid 1px #ebebeb;
+      border-radius: 3px;
+      box-sizing: border-box;
+      outline: none;
+      resize: none;
+    }
+    textarea::placeholder {
+      color: #c0c0c0;
+    }
+    img {
+      margin-left: 30px;
+      width: 78px;
+      height: 78px;
+      border-radius: 3px;
+      object-fit: cover;
+    }
+  }
+  .popup_buttons {
+    text-align: right;
+  }
+  .popup_button-cancel {
+    margin-left: auto;
+    margin-right: 18px;
+  }
+
+  .DD {
+    margin-top: 12px;
+    z-index: 10;
+  }
+  .DD__header {
+    height: 42px;
+    padding-left: 4px;
+    border: solid 1px #ebebeb;
+    border-radius: 3px;
+  }
+  .DD__title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .DD__body {
+    top: 54px;
+  }
+  .DD__item {
+    padding-left: 12px;
+    font-size: 16px;
+    height: 42px;
+    min-height: 42px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .popup_projectinfo {
+    text-align: left;
+    width: 300px;
+
+    .popup_projectinfo_input {
+      display: block;
+      .popup_projectinfo_input_title {
+        margin-bottom: 6px;
+      }
+      input,
+      textarea {
+        width: 100%;
+      }
+      img {
+        margin-left: 6px;
+      }
+    }
+    .popup_buttons {
+      display: flex;
+    }
+  }
+}

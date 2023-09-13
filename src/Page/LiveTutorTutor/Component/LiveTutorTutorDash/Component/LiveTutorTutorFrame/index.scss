@@ -1,0 +1,33 @@
+.LiveTutorTutor__Frame {
+  background-color: #ffffff;
+  border-radius: 7px;
+  border: solid 1px #ebebeb;
+  margin: 14px 0px;
+  margin-right: 14px;
+  padding: 14px 21px 14px 21px;
+
+  a {
+    color: inherit;
+  }
+
+  .header {
+    padding: 4px;
+    overflow: hidden;
+    .title {
+      float: left;
+    }
+    .subtitle {
+      float: right;
+    }
+  }
+  .header:hover {
+    border-radius: 7px;
+    background-color: #f4f4f4;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .LiveTutorTutor__Frame {
+    margin: 14px 0px;
+  }
+}

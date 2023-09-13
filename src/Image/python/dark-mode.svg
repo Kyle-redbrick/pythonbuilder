@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="22" viewBox="0 0 50 22">
+    <defs>
+        <filter id="prefix__b" width="108%" height="118.2%" x="-4%" y="-9.1%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1.5"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.0784313725 0 0 0 0 0.0941176471 0 0 0 0 0.129411765 0 0 0 1 0"/>
+        </filter>
+        <filter id="prefix__c" width="216.8%" height="221.2%" x="-58.4%" y="-48.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.360784314 0 0 0 0 0.388235294 0 0 0 0 0.411764706 0 0 0 0.377922858 0"/>
+        </filter>
+        <ellipse id="prefix__d" cx="38.699" cy="11" rx="8.562" ry="8.25"/>
+        <rect id="prefix__a" width="50" height="22" x="0" y="0" rx="11"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#393E4F" xlink:href="#prefix__a"/>
+        <use fill="#000" filter="url(#prefix__b)" xlink:href="#prefix__a"/>
+        <g>
+            <use fill="#000" filter="url(#prefix__c)" xlink:href="#prefix__d"/>
+            <use fill="#FFF" xlink:href="#prefix__d"/>
+        </g>
+    </g>
+</svg>

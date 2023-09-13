@@ -1,0 +1,102 @@
+// UserDropDown
+.UserDD {
+  display: flex;
+  position: relative;
+  margin: 0 12px 0 5px;
+  color: #242424;
+}
+.UserDD__header {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.UserDDUserTag {
+  display: flex;
+  align-items: center;
+}
+.UserDDUserTagIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.UserDDUserTagIcon__img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.UserDDUserTagName {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: inherit;
+  margin-left: 5px;
+  width: 79px;
+  overflow: hidden;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.UserDD__arrow {
+  width: 20px;
+  height: 20px;
+}
+.UserDD__arrow--on {
+  background-image: url("../../../Image/ic_dropdown-up.svg");
+}
+.UserDD__arrow--off {
+  background-image: url("../../../Image/ic_dropdown-down.svg");
+}
+
+.UserDD__body {
+  width: 100%;
+  position: absolute;
+  top: calc(50px + 7px);
+  left: 0;
+  background-color: #ffffff;
+}
+.UserDD__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 370px;
+  // border-radius: 4px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  margin-top: -11px;
+}
+.UserDDItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 43px;
+  min-height: 43px;
+  padding-left: 15px;
+  font-size: 18px;
+  color: #8592a6;
+  background: #ffffff;
+  cursor: pointer;
+}
+.UserDDItem:hover {
+  background-color: #eff2f7;
+}
+.UserDDItem--on {
+  background-color: #eff2f7;
+}
+.UserDDItem__icon {
+  width: 20px;
+  height: 20px;
+}
+.UserDDItem__text {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #3a405b;
+  margin-left: 11px;
+}

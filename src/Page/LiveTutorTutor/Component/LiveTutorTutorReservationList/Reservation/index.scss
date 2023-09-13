@@ -1,0 +1,277 @@
+.Reservation {
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  border: solid 1px #ebebeb;
+  margin: 14px 0px 14px 0px;
+  padding: 24px 48px 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .ReservationImage--web {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .ReservationProfile__web__wrapper {
+    width: 45%;
+    padding-left: 48px;
+    font-size: 18px;
+    font-weight: bold;
+
+    .ReservationProfile--canceled {
+      color: #9b9b9b;
+    }
+
+    .ReservationProfile--upcoming {
+      color: #000000;
+    }
+
+    .ReservationProfile--complete {
+      color: #9b9b9b;
+    }
+
+    .ReservationProfile__web--attention {
+      width: 48px;
+      height: 18px;
+      font-size: 12px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 6px;
+    }
+    .attendance {
+      color: #4a4a4a;
+      background-color: #ebebeb;
+    }
+    .absence {
+      color: #ebebeb;
+      background-color: #9b9b9b;
+    }
+    .cancel {
+      width: 80px;
+      color: #ff484f;
+    }
+
+    .ReservationMessage--web {
+      margin-top: 8px;
+      display: flex;
+      cursor: pointer;
+      .ReservationMessage__title {
+        font-size: 14px;
+        color: #000000;
+        padding-left: 4px;
+      }
+      .ReservationMessage__icon {
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-image: url("../../../../../Image/message-icon.svg");
+      }
+      h5 {
+        font-weight: 500;
+        margin: 2px 0px 0px 8px;
+      }
+    }
+    .ReservationMessage:hover {
+      border-radius: 7px;
+      background-color: #e0e0e0;
+    }
+  }
+
+  .ReservationProfile__mobile__wrapper {
+    display: none;
+  }
+
+  .ReservationButtons {
+    padding-left: 28px;
+    width: 35%;
+    .ReservationButton {
+      border-radius: 7px;
+      border-width: 1px;
+      font-size: 18px;
+      font-weight: normal;
+      margin: 8px;
+      width: 100%;
+      height: 50px;
+    }
+
+    .ReservationButton:focus {
+      outline: 0;
+    }
+
+    .live {
+      border-color: #32dab4;
+      background-color: #32dab4;
+      color: #ffffff;
+    }
+
+    .live:hover {
+      border-color: #33e8bf;
+      background-color: #33e8bf;
+      cursor: pointer;
+    }
+
+    .active {
+      border-color: #32dab4;
+      background-color: #ffffff;
+      color: #32dab4;
+    }
+    .active:hover {
+      background-color: #32dab4;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    .inactive {
+      border-color: #c0c0c0;
+      background-color: #c0c0c0;
+      color: #ffffff;
+    }
+    .inactive:hover {
+      border-color: #d0d0d0;
+      background-color: #d0d0d0;
+      color: #ffffff;
+    }
+    .complete {
+      border-width: 0px;
+      background-color: inherit;
+      color: #c0c0c0;
+    }
+    .past {
+      border-color: #32dab4;
+      background-color: #ffffff00;
+      color: #32dab4;
+      cursor: pointer;
+    }
+
+    .cancel {
+      border-radius: 7px;
+      background-color: #c0c0c0;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .enable {
+      color: #ffffff;
+      background-color: #c0c0c0;
+    }
+  }
+}
+
+.inactive {
+  background-color: #ebebeb;
+}
+.inactive:hover {
+  // background-color: #dbdbdb;
+}
+
+@media screen and (max-width: 1199px) {
+  .Reservation {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 24px 24px 12px 24px;
+    align-items: flex-start;
+    // .ReservationImage {
+    //   width: 60px;
+    //   height: 60px;
+    // }
+
+    .ReservationImage--web {
+      display: none;
+    }
+    .ReservationProfile__web__wrapper {
+      display: none;
+    }
+
+    .ReservationProfile__mobile__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .ReservationProfile__mobile {
+        display: flex;
+        .ReservationProfile__mobile--iconImage {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .ReservationProfile__mobile__textWrapper--canceled {
+          padding-left: 14px;
+          font-size: 14px;
+          display: block;
+          color: #9b9b9b;
+        }
+
+        .ReservationProfile__mobile__textWrapper--complete {
+          font-size: 14px;
+          font-weight: bold;
+          color: #9b9b9b;
+          padding-left: 14px;
+        }
+
+        .ReservationProfile__mobile__textWrapper--upcoming {
+          font-size: 14px;
+          font-weight: bold;
+          color: #000000;
+          padding-left: 14px;
+        }
+
+        .ReservationProfile__mobile__textWrapper--attention {
+          width: 48px;
+          height: 18px;
+          font-size: 12px;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 6px;
+        }
+
+        .attendance {
+          color: #4a4a4a;
+          background-color: #ebebeb;
+        }
+
+        .absence {
+          color: #ebebeb;
+          background-color: #9b9b9b;
+        }
+
+        .cancel {
+          width: 80px;
+          color: #ff484f;
+        }
+      }
+      .ReservationMessage__mobile--icon {
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-image: url("../../../../../Image/message-icon.svg");
+      }
+    }
+
+    .ReservationButtons {
+      width: 150%;
+      margin: 12px -12px 0px -12px;
+      padding-left: 0px;
+      display: flex;
+      .ReservationButton {
+        font-size: 14px;
+      }
+    }
+  }
+  .Reservation:hover {
+    width: 100%;
+    margin-left: 0px;
+  }
+}

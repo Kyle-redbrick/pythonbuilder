@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>round-add-wt-btn</title>
+    <desc>Created with Sketch.</desc>
+    <g id="1-1-ver" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wizclass-community" transform="translate(-1176.000000, -254.000000)">
+            <g id="Group" transform="translate(0.000000, 50.000000)">
+                <g id="Group-2" transform="translate(1160.000000, 190.000000)">
+                    <g id="round-add-24px" transform="translate(15.000000, 14.000000)">
+                        <polygon id="Path" points="0 0 26 0 26 24 0 24"></polygon>
+                        <path d="M19.5,13 L14.0833333,13 L14.0833333,18 C14.0833333,18.55 13.5958333,19 13,19 C12.4041667,19 11.9166667,18.55 11.9166667,18 L11.9166667,13 L6.5,13 C5.90416667,13 5.41666667,12.55 5.41666667,12 C5.41666667,11.45 5.90416667,11 6.5,11 L11.9166667,11 L11.9166667,6 C11.9166667,5.45 12.4041667,5 13,5 C13.5958333,5 14.0833333,5.45 14.0833333,6 L14.0833333,11 L19.5,11 C20.0958333,11 20.5833333,11.45 20.5833333,12 C20.5833333,12.55 20.0958333,13 19.5,13 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

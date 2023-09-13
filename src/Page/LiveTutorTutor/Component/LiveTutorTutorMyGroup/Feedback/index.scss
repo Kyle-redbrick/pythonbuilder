@@ -1,0 +1,400 @@
+.Live_Tutor_Tutor_My_Group_Feedback{
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  height: 100%;
+
+  // 피드백 타이틀
+  .section_title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .section_subTitle{
+    font-size: 14px;
+    color: #494949;
+    margin-top: 4px;
+  }
+
+  .section_feedback_title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+  }
+
+  .section_feedback_guide {
+    color: #222222;
+
+    ul {
+      list-style: none;
+      margin: 11px 0 16px;
+      padding-left: 0;
+    }
+
+    li {
+      color: #999999;
+    }
+
+    li + li {
+      margin-top: 4px;
+    }
+  }
+
+  .section_feedback_guide_text {
+    margin-top: 12px;
+  }
+  
+  .tip_container{
+    display: flex;
+    width: 100%;
+
+    .tip{
+      width: 48px;
+      line-height: 20px;
+      border-radius: 10px;
+      border: solid 1px #63baf5;
+      font-size: 14px;
+      font-weight: 500;
+      color: #63baf5;
+      text-align: center;
+      background-color: rgba(99, 186, 245, 0.15);
+    }
+    .tip_text{
+      font-size: 14px;
+      color: #999999;
+      margin-left: 12px;
+    }
+  }
+
+  .margin_top12{
+    margin-top: 12px;
+  }
+  .margin_top20{
+    margin-top: 20px;
+  }
+  .margin_top35{
+    margin-top: 35px;
+  }
+  .margin_bottom16{
+    margin-bottom: 16px;
+  }
+
+ .header{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 252px;
+    padding: 50px 25px 35px 25px;
+    color: white;
+    background: url("../../../../../Image/group_background.png") no-repeat;
+    
+    .title{
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .subTitle{
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    .progress_bar_container{
+      width: 100%;
+      min-height: 12px;
+      margin-top: 5px;
+      border-radius: 10px;
+      background-color: #eeeeee;
+
+      .progress{
+        height: 100%;
+        border-radius: 10px;
+        background-color: #63baf5;
+      }
+    }
+  }
+
+
+  // 프로필 카드
+  .profile_container{
+    display: flex;
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+    border-radius: 8px;
+
+    .profile_card{
+      display: flex;
+      width: 282px;
+      height: 96px;
+      padding: 12px 25px 12px 25px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #999999;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+
+      img{
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
+      }
+      .name{
+        margin: auto;
+      }
+      
+      & + .profile_card{ 
+        margin-left: 20px;
+      }
+    }
+
+    .selected{
+      color: #000000;
+      border: solid 1px #63baf5;
+      background-color: #f0f9fe;
+    }
+  }
+
+  // 평가 항목 
+  .evaluation_container{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    border-radius: 8px;
+    border: solid 1px #ebebeb;
+    margin: 20px 0px 20px 0px;
+
+    .title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 165px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #222222;
+    }
+
+    .line{
+      width: 1px;
+      background-color: #ebebeb;
+    }
+    
+    .text{
+      display: flex;
+      align-items: center;
+      flex: 1;
+      margin-left: 38px;
+      font-size: 16px;
+      color: #222222;
+    }
+
+    .star_container{
+      display: flex;
+      align-items: center;
+      margin-right: 24px;
+
+      :nth-child(2){
+        margin-left: 18px;
+        margin-right: 18px;
+      }
+
+      .star{
+        width:35px;
+        height: 35px;
+        background: url("../../../../../Image/feedback-start-default.svg") no-repeat center/cover;
+        cursor: pointer;
+      }
+      
+      .selected{
+        background: url("../../../../../Image/feedback-start.svg")   no-repeat center/cover;
+      }
+    }
+  }
+
+  .feedback_text_area{
+    width: 100%;
+    height: 180px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: solid 1px #ebebeb;
+    padding: 15px;
+    margin: 16px 0px 10px 0px;
+    resize: none;
+  }
+
+  .feedback_app_link_area{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: solid 1px #ebebeb;
+    padding: 15px;
+    resize: none;
+  }
+  
+  .button_container{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 213px 0px;
+
+    .confirm_button, .cancel_button{
+      width: 172px;
+      line-height: 56px;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .confirm_button{
+      color: #ffffff;
+      background-color: #63baf5;
+    }
+  
+    .cancel_button{
+      color: #63baf5;
+      border: solid 1px #63baf5;
+      margin-right: 20px;
+    }
+  }
+  
+  @media screen and (max-width : 1199px){
+    .margin_top12 {
+      margin-top: 0;
+    }
+
+    .header {
+      height: 216px;
+      border-radius: 0;
+      padding: 24px 16px;
+      .title {
+        font-size: 18px;
+      }
+      .title + .title {
+        margin-top: 24px;
+      }
+      .subTitle {
+        margin-top: 3px;
+      }
+    }
+
+    .profile_container {
+      padding: 36px 16px;
+      .profile_card {
+        width: unset;
+        height: unset;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        background: none;
+        color: #000000;
+        border: 1px solid transparent;
+        img {
+          box-sizing: border-box;
+          width: 70px;
+          height: 70px;
+        }
+        .name {
+          margin-top: 10px;
+          font-size: 16px;
+        }
+        &.selected {
+          border: none;
+          background: none;
+          img {
+            border-radius: 50%;
+            border: 1px solid #63BAF5;
+          }
+        }
+        + .profile_card {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    .section_title,
+    .section_subTitle {
+      margin-left: 16px;
+    }
+
+    .section_title {
+      font-size: 18px;
+    }
+    .section_subTitle {
+      font-size: 14px;
+    }
+    
+    .evaluation_container {
+      flex-direction: column;
+      width: calc(100% - 32px);
+      height: unset;
+      margin: 16px auto;
+      .title {
+        width: 100%;
+        border-bottom: 1px solid #EBEBEB;
+      }
+      .text {
+        margin-left: 0;
+        padding: 13.5px 14px;
+        line-height: 16px;
+        font-size: 14px;
+      }
+      .star_container {
+        margin: 8px auto;
+      }
+    }
+
+    .section_feedback_title,
+    .tip_container {
+      padding: 0 16px;
+    }
+
+    .section_feedback_title {
+      font-size: 14px;
+    }
+
+    .tip_container {
+      position: relative;
+      margin-top: 10px;
+      display: inline-block;
+      .tip {
+        position: absolute;
+        width: 43px;
+        font-size: 12px;
+      }
+      .tip_text {
+        margin-left: 51px;
+        width: calc(100% - 43px - 8px);
+        font-size: 12px;
+      }
+    }
+
+    .feedback_text_area,
+    .feedback_app_link_area,
+    .button_container {
+      width: calc(100% - 32px);
+      margin-left: 16px;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .feedback_app_link_area {
+      margin-top: 10px;
+    }
+    
+    .button_container {
+      margin-top: 40px;
+      .cancel_button, .confirm_button {
+        width: calc(50% - 8px);
+        line-height: 48px;
+        font-size: 16px;
+      }
+      .cancel_button {
+        margin-right: auto;
+      }
+    }
+
+    .section_feedback_guide {
+      padding: 0 16px;
+      font-size: 14px;
+    }
+  }
+}

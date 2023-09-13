@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>play_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wizschool-1.1v" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.8">
+        <g id="landscape-1" transform="translate(-704.000000, -1040.000000)" fill="#FCFCFC">
+            <g id="play_btn" transform="translate(690.000000, 1040.000000)">
+                <g id="Group-14">
+                    <g id="play_icon" transform="translate(14.000000, 0.000000)">
+                        <path d="M8,8.21491792 L8,20.7847409 C8,21.74316 9.17324071,22.3263056 10.0766769,21.803866 L21.0500886,15.5186479 C21.8860737,15.0464901 21.8860737,13.9537819 21.0500886,13.468747 L10.0766769,7.19640599 C9.17324071,6.67335321 8,7.257112 8,8.21491792" id="Fill-3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

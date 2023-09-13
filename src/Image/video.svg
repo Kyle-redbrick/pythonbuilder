@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <path id="dpcti4evwa" d="M24 13.6V8c0-.88-.72-1.6-1.6-1.6H3.2c-.88 0-1.6.72-1.6 1.6v16c0 .88.72 1.6 1.6 1.6h19.2c.88 0 1.6-.72 1.6-1.6v-5.6l3.664 3.664c1.008 1.008 2.736.288 2.736-1.136v-9.872c0-1.424-1.728-2.144-2.736-1.136L24 13.6z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0H32V32H0z"/>
+        <use fill="#333" fill-rule="nonzero" xlink:href="#dpcti4evwa"/>
+    </g>
+</svg>

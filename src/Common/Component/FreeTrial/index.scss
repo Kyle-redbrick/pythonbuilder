@@ -1,0 +1,397 @@
+.freetrial_container {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .freetrial {
+    margin: 0 auto;
+    width: 390px;
+    min-height: 536px;
+    padding: 0 8px;
+
+    .freetrial_title {
+      margin-top: 17px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .freetrial_subtitle {
+      margin-bottom: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.57;
+      color: #4a4a4a;
+    }
+    .freetrial_require {
+      margin-left: 1px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #f05c63;
+    }
+
+    .freetrial_type_container {
+      margin-top: 15px;
+
+      input {
+        width: 25px;
+        height: 25px;
+      }
+      .freetrial_type_checkbox_container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .freetrial_typ_checkbox_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 50%;
+        p {
+          margin: 0px;
+        }
+      }
+    }
+    
+    .freetrial_1v4_disable {
+      position: absolute;
+      top: 183px;
+      left: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      height: 78%;
+      color: #FFFFFF;
+      background: #000;
+      opacity: 0.7;
+      border-radius: 3px;
+      z-index: 2;
+      
+      p {
+        text-align: center;
+        padding: 0 20px;
+        word-break: keep-all;
+      }
+      
+      p:nth-child(1) {
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 24px;
+        line-height: 132%;
+        padding: 0 66px;
+      }
+      p:nth-child(2) {
+        font-size: 22px;
+        line-height: 160%;
+      }
+      p:nth-child(3) {
+        font-size: 16px;
+        line-height: 160%;
+      }
+    }
+
+    .freetrial_studentInfo {
+      margin-top: 20px;
+      .freetrial_studentInfo_section {
+        margin: 16px 0;
+        display: flex;
+      }
+      .freetrial_studentInfo_section-warning {
+        padding-bottom: 18px;
+      }
+    }
+    .freetrial_parentInfo,
+    .freetrial_numberInfo,
+    .freetrial_promoInfo,
+    .freetrial_routeInfo,
+    .freetrial_detailInfo {
+      margin-top: 24px;
+    }
+
+    .freetrial_input {
+      width: 100%;
+      height: 48px;
+      padding: 0 8px;
+      font-size: 16px;
+      color: #222222;
+      border-radius: 3px;
+      border: solid 1px #ebebeb;
+      background-color: #fcfcfc;
+      box-sizing: border-box;
+      outline: none;
+    }
+    .freetrial_input::placeholder {
+      color: #c0c0c0;
+    }
+    .freetrial_input-warning {
+      border: 1px solid #ec3f7a;
+    }
+
+    .freetrial_studentInfo_dropdown {
+      width: 180px;
+      height: 48px;
+      border-radius: 3px;
+      border: solid 1px #ebebeb;
+      background-color: #fcfcfc;
+      .DD {
+        margin-top: 3px;
+        z-index: 1;
+      }
+      .DD__list {
+        overflow-y: scroll;
+      }
+    }
+    .freetrial_studentInfo_dropdown:nth-child(2) {
+      margin-left: auto;
+    }
+    .freetrial_studentInfo_dropdown-warning,
+    .freetrial_routeInfo_dropdown-warning  {
+      border: 1px solid #ec3f7a;
+    }
+
+    .freetrial_routeInfo_dropdown {
+      width: 100%;
+      height: 48px;
+      border-radius: 3px;
+      border: solid 1px #ebebeb;
+      background-color: #fcfcfc;
+      .DD {
+        margin-top: 3px;
+        z-index: 1;
+        .DD__body {
+          max-height: 150px;
+          overflow-y: scroll;
+          box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+        }
+      }
+
+    }
+
+    .freetrial_warning {
+      margin-top: 6px;
+      margin-left: 6px;
+      font-size: 14px;
+      color: #ec3f7a;
+    }
+
+    .freetrial_button {
+      display: block;
+      margin: 40px auto 0 auto;
+      width: 200px;
+      height: 43px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      background-color: #63baf5;
+      outline: none;
+      cursor: pointer;
+    }
+    .freetrial_button-disabled {
+      background-color: #c0c0c0;
+      cursor: default;
+    }
+
+    .freetrial_terms {
+      margin-top: 12px;
+      text-align: center;
+    }
+    .freetrial_terms_title {
+      font-size: 14px;
+      line-height: 1.79;
+      text-align: center;
+      color: #4a4a4a;
+    }
+    .freetrial_terms_title-web {
+      display: block;
+    }
+    .freetrial_terms_title-mobile {
+      display: none;
+    }
+    .freetrial_terms_link {
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: underline;
+      color: #63baf5;
+      cursor: pointer;
+    }
+  }
+
+  .freetrial_input_checkbox {
+    display: flex;
+    opacity: 0.6;
+    font-size: 11px;
+    letter-spacing: -0.21px;
+    color: #222222;
+    margin-top: 15px;
+    line-height: 1.5;
+    width: 100%;
+    cursor: pointer;
+
+    input[type="checkbox"] {
+      cursor: pointer;
+    }
+  }
+
+  .freetrial_after {
+    text-align: center;
+    width: 438px;
+    height: 613px;
+    margin: -36px -24px -24px -24px;
+
+    .freetrial_after_up {
+      padding-top: 40px;
+      height: 283px;
+      color: #fff;
+      background-color: rgba(255, 121, 0, 0.93);
+    }
+    .freetrial_after_down {
+      padding-top: 42px;
+      height: 306px;
+    }
+    .freetrial_after_down-mobile {
+      display: none;
+    }
+    .freetrial_after_checkImg {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+    .freetrial_after_row1 {
+      margin-top: 17px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .freetrial_after_row2 {
+      margin-top: 13px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .freetrial_after_row3 {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.57;
+      opacity: 0.6;
+      white-space: pre;
+    }
+    .freetrial_after_headsetImg {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      opacity: 0.8;
+    }
+    .freetrial_after_row4 {
+      margin-top: 8px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .freetrial_after_row5 {
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 1.57;
+      white-space: pre;
+    }
+    .freetrial_after_button {
+      margin: 0 auto;
+      width: 200px;
+      height: 43px;
+      border: none;
+      border-radius: 25px;
+      display: block;
+      outline: none;
+      cursor: pointer;
+    }
+    .freetrial_after_button:hover {
+      opacity: 0.8;
+    }
+    .freetrial_after_button-start {
+      margin-top: 43px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #63baf5;
+    }
+    .freetrial_after_button-nexttime {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #9b9b9b;
+    }
+  }
+
+  // Mobile
+  @media screen and (max-width: 1199px) {
+    .freetrial {
+    }
+  }
+
+  @media screen and (max-width: 438px) {
+    .freetrial {
+      width: 335px;
+      .freetrial_terms_title-web {
+        display: none;
+      }
+      .freetrial_terms_title-mobile {
+        display: block;
+        white-space: pre;
+      }
+      .freetrial_studentInfo_dropdown {
+        width: 153px;
+      }
+      .freetrial_studentInfo_dropdown:nth-child(2) {
+        margin-left: auto;
+      }
+    }
+    .freetrial_after {
+      text-align: center;
+      width: 335px;
+      height: 555px;
+      .freetrial_after_up {
+        height: 273px;
+      }
+      .freetrial_after_down {
+        padding-top: 32px;
+        height: 282px;
+      }
+      .freetrial_after_down-web {
+        display: none;
+      }
+      .freetrial_after_down-mobile {
+        display: block;
+      }
+      .freetrial_after_row1 {
+        margin-top: 16px;
+        font-size: 20px;
+      }
+      .freetrial_after_row2 {
+        margin-top: 9px;
+        font-size: 14px;
+        white-space: pre;
+      }
+      .freetrial_after_row3 {
+        margin-top: 8px;
+        font-size: 12px;
+      }
+      .freetrial_after_row5 {
+        font-size: 14px;
+      }
+      .freetrial_after_row6 {
+        margin-top: 16px;
+        font-size: 12px;
+        font-weight: 500;
+        opacity: 0.4;
+      }
+      .freetrial_after_button {
+        width: 160px;
+        height: 43px;
+        margin-top: 37px;
+      }
+    }
+  }
+}

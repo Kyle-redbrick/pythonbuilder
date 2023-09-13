@@ -1,0 +1,260 @@
+.oxQuiz,
+.oxQuiz__success,
+.oxQuiz__fail,
+.oxQuiz__final,
+.oxQuiz__coupon,
+.oxQuiz__complete {
+  font-family: “Noto Sans KR”, sans-serif;
+  max-width: 660px;
+  background-color: #ffffff;
+  text-align: center;
+  img[alt="discount"] {
+    height: 245px;
+  }
+}
+.oxQuiz {
+  & > * {
+    margin-bottom: 16px;
+  }
+  height: 100%;
+  p {
+    font-size: 15px;
+  }
+  hr {
+    width: 100%;
+    border-top: 1px solid #d8d8d8;
+  }
+  img[alt="step"] {
+    height: 37px;
+  }
+  .btn__group {
+    display: flex;
+    justify-content: space-around;
+  }
+  .btn__group > div {
+    width: 173px;
+    height: 173px;
+    line-height: 173px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 100px;
+    cursor: pointer;
+  }
+  .btn__o {
+    color: #63baf5;
+    border: solid 6px #63baf5;
+  }
+  .btn__x {
+    color: #ff8122;
+    border: solid 6px #ff8122;
+  }
+  .btn__o:hover {
+    background-color: rgba(99, 186, 245, 0.3);
+  }
+  .btn__x:hover {
+    background-color: rgba(255, 129, 34, 0.3);
+  }
+}
+.oxQuiz__success,
+.oxQuiz__fail {
+  & > * {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 100px;
+    opacity: 0.64;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  p + p {
+    margin-top: -10px;
+  }
+  .discount--acc {
+    color: #b21121;
+  }
+  .discount--default {
+    color: #555555;
+  }
+  button {
+    border: 0;
+    outline: 0;
+    background: #63baf5;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 9px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+.oxQuiz__final {
+  & > * {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.72;
+  }
+  img[alt="celebration"] {
+    width: 266px;
+    height: 245px;
+  }
+  .btn__group {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+  }
+  button {
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 9px;
+    height: 52px;
+    line-height: 52px;
+    cursor: pointer;
+  }
+  button + button {
+    margin-top: 16px;
+  }
+  .btn--kakao {
+    background-color: #ffeb3b;
+    color: #020202;
+  }
+  .btn--kakao > img {
+    transform: translateY(25%);
+    margin-right: 10px;
+  }
+  .btn--retry {
+    background-color: #63baf5;
+    color: #fff;
+  }
+}
+.oxQuiz__coupon {
+  & > * {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 30px;
+    // font-weight: bold;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  form > * {
+    margin-bottom: 20px;
+  }
+  .input__item {
+    display: flex;
+  }
+  label {
+    flex: 0.25;
+    text-align: left;
+    align-self: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  input[type="text"] {
+    flex: 0.75;
+    border: 0;
+    outline: 0;
+    width: 70%;
+    padding: 15px 0;
+    border-radius: 3px;
+    border: solid 2px #e1e1e1;
+    padding-left: 10px;
+  }
+  ::-webkit-input-placeholder,
+  :-ms-input-placeholder,
+  ::placeholder {
+    font-size: 16px;
+    color: #a2a2a2;
+  }
+  input[type="submit"] {
+    border: 0;
+    outline: 0;
+    background: #63baf5;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 9px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .input--warning {
+    font-size: 14px;
+    color: #b21121;
+  }
+}
+.oxQuiz__complete {
+  & > * {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  div {
+    background: #63baf5;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 9px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .oxQuiz,
+  .oxQuiz__success,
+  .oxQuiz__complete {
+    // margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .btn__group > div {
+      width: 130px;
+      height: 177px;
+      line-height: 177px;
+    }
+    img[alt="step"] {
+      width: 242px;
+      height: 34px;
+      margin: 20px auto;
+    }
+    img[alt="discount"] {
+      width: 297px;
+      height: 166px;
+      margin: 20px auto;
+    }
+    img[alt="celebration"] {
+      height: 182px;
+    }
+  }
+  .oxQuiz__fail,
+  .oxQuiz__coupon,
+  .oxQuiz__complete {
+    margin: auto 0;
+  }
+}

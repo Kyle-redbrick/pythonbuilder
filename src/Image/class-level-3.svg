@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81" height="22" viewBox="0 0 81 22">
+    <defs>
+        <filter id="a" width="133.1%" height="128.8%" x="-16.6%" y="-14.4%" filterUnits="objectBoundingBox">
+            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <rect id="b" width="350" height="403" rx="7"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(-112 -277)">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#b"/>
+        </mask>
+        <use fill="#FFF" xlink:href="#b"/>
+        <g fill="#9CDE57" mask="url(#c)">
+            <g transform="translate(112 277)">
+                <rect width="81" height="22" fill-opacity=".2" rx="7"/>
+                <path fill-rule="nonzero" d="M24.02 14.388h-9.66v-.996h3.612v-3.66h1.224v3.66h4.824v.996zm-1.2-8.112c0 1.848-.036 4.224-.468 6l-1.176-.18c.312-1.392.408-3.384.408-4.824h-6.108v-.996h7.344zm10.32 9.528h-7.188v-4.416h1.224v1.248h4.74v-1.272h1.224v4.44zm-.024-10.128c0 1.356-.12 2.784-.324 3.792h1.584v.996h-9.66v-.996h6.888c.168-.756.276-2.028.276-2.808h-5.904v-.984h7.14zm-1.2 9.144v-1.224h-4.74v1.224h4.74z"/>
+                <path d="M42 13.84l-2.19.898a.5.5 0 0 1-.688-.5l.177-2.36-1.531-1.806a.5.5 0 0 1 .263-.809l2.3-.561 1.244-2.014a.5.5 0 0 1 .85 0l1.245 2.014 2.3.561a.5.5 0 0 1 .262.81l-1.53 1.805.176 2.36a.5.5 0 0 1-.688.5L42 13.841zM52 13.84l-2.19.898a.5.5 0 0 1-.688-.5l.177-2.36-1.531-1.806a.5.5 0 0 1 .263-.809l2.3-.561 1.244-2.014a.5.5 0 0 1 .85 0l1.245 2.014 2.3.561a.5.5 0 0 1 .262.81l-1.53 1.805.176 2.36a.5.5 0 0 1-.688.5L52 13.841zM62 13.84l-2.19.898a.5.5 0 0 1-.688-.5l.177-2.36-1.531-1.806a.5.5 0 0 1 .263-.809l2.3-.561 1.244-2.014a.5.5 0 0 1 .85 0l1.245 2.014 2.3.561a.5.5 0 0 1 .262.81l-1.53 1.805.176 2.36a.5.5 0 0 1-.688.5L62 13.841z"/>
+            </g>
+        </g>
+    </g>
+</svg>

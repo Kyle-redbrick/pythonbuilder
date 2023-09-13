@@ -1,0 +1,136 @@
+.RatingLessonPopup {
+  z-index: 10;
+  background-color: #393e4f;
+  height: 584px;
+  width: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px #282c36;
+}
+
+.RatingLessonPopupHeader {
+  height: 56px;
+  line-height: 56px;
+  border-bottom: 1px solid #282c36;
+
+  .HeaderText {
+    font-weight: bold;
+    float: left;
+    margin: 0px 0px 0px 24px;
+  }
+}
+
+.RatingLessonPopupQuestions {
+  position: relative;
+  padding: 24px;
+
+  .QuestionTitle {
+    margin-bottom: 8px;
+  }
+
+  .QuestionTitle.requiredQuestion {
+    &:after {
+      content: "*";
+      width: 6px;
+      height: 24px;
+      font-size: 16px;
+      color: #1db6ff;
+      margin-left: 4px;
+    }
+  }
+
+  .RatingTutor {
+    margin-bottom: 40px;
+
+    .RateArea {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .star {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      margin-right: 4px;
+
+      &:hover {
+        background: url("../../../../../Image/python/btn-star-selected.svg")
+          no-repeat center/cover;
+      }
+    }
+
+    .normal {
+      background: url("../../../../../Image/python/btn-star-normal.svg")
+        no-repeat center/cover;
+    }
+
+    .selected {
+      background: url("../../../../../Image/python/btn-star-selected.svg")
+        no-repeat center/cover;
+    }
+  }
+
+  .RatingLessonPopupInput {
+    width: 432px;
+    height: 40px;
+    margin: 0px 0px 24px 0px;
+    padding: 8px 0 0 16px;
+    box-sizing: border-box;
+    background: #272b37;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.4em;
+    outline: none;
+  }
+
+  .noresize {
+    resize: none;
+  }
+
+  .RatingLessonPopupInput.reviewForTutor {
+    margin: 0px 0px 40px 0px;
+    height: 136px;
+  }
+
+  .RatingLessonPopupInput.reviewForWizlive {
+    height: 64px;
+  }
+
+  .errorMessage {
+    position: absolute;
+    bottom: 10px;
+    color: #fe494a;
+  }
+}
+
+.RatingLessonPopupButton {
+  position: absolute;
+  bottom: 32px;
+  right: 24px;
+
+  .RatingLessonPopupButtonSubmit,
+  .RatingLessonPopupButtonSubmitComplete {
+    float: right;
+    width: 107px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #999999;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    cursor: not-allowed;
+    outline: none;
+  }
+
+  .RatingLessonPopupButtonSubmitComplete {
+    background-color: #1db6ff;
+    cursor: pointer;
+  }
+}

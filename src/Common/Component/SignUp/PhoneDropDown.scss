@@ -1,0 +1,112 @@
+// PhoneDropDown
+.PhoneDD {
+  display: flex;
+  position: relative;
+  width: 300px;
+}
+.PhoneDD__header {
+  width: 100%;
+  height: 48px;
+  margin: 0;
+  border: 1px solid #e3e8f0;
+  border-radius: 3px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 7px 0 6px 0;
+}
+.on {
+  border: 1px solid #ff5a60;
+}
+
+.PhoneDD__countryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 1px solid #e3e8f0;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.PhoneDD__title {
+  font-size: 14px;
+  line-height: 1.56;
+  color: #3a405b;
+}
+.PhoneDD__arrow {
+  width: 24px;
+  height: 24px;
+}
+.PhoneDD__arrow--on {
+  background-image: url("../../../Image/arrow-drop-up-btn.svg");
+}
+.PhoneDD__arrow--off {
+  background-image: url("../../../Image/arrow-drop-down-btn.svg");
+}
+
+.PhoneDD__input {
+  width: 100%;
+  height: 100%;
+  margin: 0 10px;
+  border: 0;
+  font-size: 16px;
+  line-height: 1.56;
+  outline: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+.PhoneDD__input::placeholder {
+  color: #c0c0c0;
+}
+
+.PhoneDD__body {
+  width: 100%;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  background-color: #ffffff;
+  padding: 10px 4px 15px 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px 0 rgba(74, 74, 74, 0.5);
+}
+.PhoneDD__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 200px;
+  padding-right: 20px;
+  overflow-y: auto;
+}
+.PhoneDD__item {
+  width: 100%;
+  padding: 0 20px;
+  font-size: 12px;
+  line-height: 1.67;
+  text-align: center;
+  color: #4a4a4a;
+  margin: 5px 0;
+  cursor: pointer;
+  //   word-wrap: normal;
+  //   white-space: pre-wrap;
+}
+.PhoneDD__item--on {
+  border-radius: 4px;
+  background-color: #c0c0c0;
+}
+.PhoneDD__item:hover {
+  border-radius: 4px;
+  background-color: #c0c0c0;
+}
+
+@media screen and (max-width: 767px) {
+  .PhoneDD {
+    width: 100%;
+  }
+  .PhoneDD__header {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}

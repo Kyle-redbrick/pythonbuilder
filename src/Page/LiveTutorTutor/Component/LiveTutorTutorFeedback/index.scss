@@ -1,0 +1,260 @@
+.LiveTutorTutor__Feedback {
+  .column {
+    float: left;
+    margin-top: 14px;
+    margin-bottom: 50px;
+  }
+  .left {
+    width: 30%;
+  }
+  .right {
+    width: 70%;
+  }
+
+  .Feedback__Empty {
+    margin: 150px 0px;
+    text-align: center;
+    color: #9b9b9b;
+  }
+
+  .Feedback__Reservation {
+    width: 100%;
+    height: 126px;
+    border-radius: 7px;
+    border: solid 1px #ebebeb;
+    padding: 21px 42px;
+    display: flex;
+    align-items: center;
+
+    .Reservation__Image {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      opacity: 0.7;
+    }
+    .Reservation__Infor {
+      margin-left: 21px;
+      width: 60%;
+      color: #9b9b9b;
+      h4 {
+        margin: 3px 0px;
+      }
+    }
+  }
+
+  .Feedback__Contents {
+    padding: 0px 28px;
+    .Feedback__Content {
+      margin-bottom: 28px;
+
+      .Contents__Input {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 42px;
+        margin-top: 14px;
+        padding: 0px 14px;
+        font-size: 16px;
+        border-radius: 7px;
+        border: solid 1px #ebebeb;
+      }
+      .Contents__Input:focus {
+        border: solid 1px #32dab4;
+        caret-color: #32dab4;
+        outline: 0;
+      }
+
+      .Contents__TextArea {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 126px;
+        margin-top: 14px;
+        padding: 14px;
+        font-size: 16px;
+        border-radius: 7px;
+        border: solid 1px #ebebeb;
+        resize: none;
+      }
+      .Contents__TextArea:focus {
+        border: solid 1px #32dab4;
+        caret-color: #32dab4;
+        outline: 0;
+      }
+
+      .Contents__Feedback {
+        width: 100%;
+        min-height: 42px;
+        margin-top: 14px;
+        border: solid 1px #ebebeb;
+        border-collapse: collapse;
+        text-align: left;
+        tbody,
+        tr,
+        th {
+          border: solid 1px #ebebeb;
+          height: 42px;
+          padding: 0px 14px;
+        }
+        tbody {
+          border-top: solid 2px #32dab4;
+        }
+
+        .Feedback__Header {
+          color: #32dab4;
+        }
+        .Feedback__Title {
+          position: relative;
+          width: 80%;
+        }
+        .Feedback__Rating {
+          width: 20%;
+          text-align: center;
+        }
+        .Feedback__Input {
+          width: 100%;
+          height: 42px;
+          font-size: 14px;
+          border-width: 0px;
+        }
+        .Feedback__Input:focus {
+          caret-color: #32dab4;
+          outline: 0;
+        }
+        .Feedback__Suggestions {
+          position: absolute;
+          left: 4px;
+          top: 49px;
+          z-index: 1;
+          background-color: #ffffff;
+          border: solid 1px #ebebeb;
+          width: 100%;
+          max-height: 210px;
+          overflow: auto;
+          opacity: 0.95;
+          table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+          tbody,
+          tr,
+          th {
+            border: 0px;
+            height: 42px;
+            padding: 0px 14px;
+            font-size: 14px;
+            font-weight: 400;
+          }
+          .Active {
+            background-color: #ebebeb;
+          }
+          .Feedback__Suggestion:hover {
+            background-color: #ebebeb;
+          }
+        }
+        .Feedback__Select {
+          width: 100%;
+          height: 42px;
+          border-width: 0px;
+          font-size: 14px;
+          background-color: #ffffff;
+        }
+        .Feedback__Select:hover {
+          cursor: pointer;
+        }
+        .Feedback__Select:focus {
+          outline: 0;
+        }
+        .Feedback__Delete {
+          width: 42px;
+          height: 42px;
+          background-color: #d3f7ef;
+          border-width: 0px;
+          border-radius: 3px;
+          color: #32dab4;
+          font-size: 12px;
+          font-weight: bold;
+          margin-left: 21px;
+          position: absolute;
+          z-index: 1;
+          background-image: url("../../../../Image/tutor-trash.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .Feedback__Delete:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+        .Feedback__Delete:focus {
+          outline: 0;
+        }
+      }
+
+      .Contents__AddFeedback {
+        width: 100%;
+        min-height: 35px;
+        margin-top: 7px;
+        border: solid 2px #ebebeb;
+        border-style: dashed;
+        color: #ebebeb;
+        text-align: center;
+        cursor: pointer;
+      }
+      .Contents__AddFeedback:hover {
+        border: solid 2px #9b9b9b;
+        color: #9b9b9b;
+        border-style: dashed;
+      }
+    }
+  }
+
+  .Submit {
+    float: right;
+    margin: 0px 28px;
+    background-color: #32dab4;
+    border-radius: 7px;
+    border-width: 0px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    height: 56px;
+    width: 180px;
+  }
+  .Submit:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .Submit:focus {
+    outline: 0;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .Feedback__Reservation {
+      width: auto;
+      min-width: 300px;
+      padding: 28px;
+      margin: 0px auto;
+    }
+    .Feedback__Contents {
+      padding: 0px;
+      margin: 0px auto;
+      .Feedback__Content {
+        .Contents__Feedback {
+          width: calc(100% - 50px);
+          .Feedback__Title {
+            width: 70%;
+          }
+          .Feedback__Rating {
+            width: 30%;
+          }
+        }
+        .Contents__AddFeedback {
+          width: calc(100% - 50px);
+        }
+      }
+    }
+    .Submit {
+      margin: auto;
+      width: 100%;
+    }
+  }
+}

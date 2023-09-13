@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="276" height="178" viewBox="0 0 276 178">
+    <defs>
+        <filter id="8kwo14b3pa" width="106.8%" height="110.8%" x="-3.4%" y="-5.4%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.620640851 0 0 0 0 0.620640851 0 0 0 0 0.620640851 0 0 0 1 0"/>
+        </filter>
+        <path id="pfh974ri0b" d="M274 0c3.866 0 7 3.134 7 7v54c-10.493 0-19 9.626-19 21.5s8.507 21.5 19 21.5v55c0 3.866-3.134 7-7 7H24c-3.866 0-7-3.134-7-7v-55.03c.331.02.665.03 1 .03 10.493 0 19-9.626 19-21.5S28.493 61 18 61c-.335 0-.669.01-1 .03V7c0-3.866 3.134-7 7-7h250z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-43 -351) translate(32 357)">
+                    <use fill="#000" filter="url(#8kwo14b3pa)" xlink:href="#pfh974ri0b"/>
+                    <use fill="#FFF" xlink:href="#pfh974ri0b"/>
+                </g>
+                <text font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-size="18" font-weight="400" letter-spacing="-.825" transform="translate(-43 -351) translate(32 357)">
+                    <tspan x="97.291" y="101.474" fill="#000">할인 획득</tspan>  <tspan x="75.79" y="127.474" fill="#757575">(1문제 당 10%)</tspan>
+                </text>
+                <text fill="#B21121" font-family="NotoSansCJKkr-Black, Noto Sans CJK KR" font-size="60" font-weight="700" letter-spacing="-.697" transform="translate(-43 -351) translate(32 357)">
+                    <tspan x="85" y="78">10%</tspan>
+                </text>
+                <path stroke="#AC2C39" stroke-width="2" d="M37 14.25L259.249 14.25M37 152L259.249 152" transform="translate(-43 -351) translate(32 357)"/>
+            </g>
+        </g>
+    </g>
+</svg>

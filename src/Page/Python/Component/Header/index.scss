@@ -1,0 +1,178 @@
+.Page--Python {
+  .Header {
+    position: relative;
+    height: 32px;
+    z-index: 3;
+    background: var(--W_HeaderBG);
+    color: var(--W_HeaderTitle);
+    font-size: 17px;
+    background-color: #272b37;
+  }
+
+  .HeaderLeft {
+    float: left;
+    margin-left: 22px;
+  }
+
+  .HeaderRight {
+    float: right;
+  }
+  .HeaderProjectItems {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    padding-right: 4px;
+
+    .HeaderProjectTimeWrapper {
+      display: flex;
+      align-items: center;
+      font-family: "Noto Sans KR", sans-serif;
+      font-size: 13px;
+      color: #ffffff;
+      line-height: 32px;
+      margin-right: 8px;
+
+      img {
+        width: 14px;
+        height: 14px;
+        margin-right: 8px;
+      }
+    }
+
+    .HeaderProjectButtons {
+      position: relative;
+      width: 58px;
+
+      div {
+        position: absolute;
+        right: 0;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 13px;
+        height: 23px;
+        margin: 4px auto;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+
+      .HeaderProjectItemSave {
+        color: #1bd6ff;
+        border: 1px solid #1db6ff;
+        line-height: 32px;
+        width: 83px;
+        display: flex;
+        align-items: center;
+        img {
+          display: block;
+          margin: 0 4px 0 8px;
+        }
+        margin-right: 10px;
+      }
+
+      .HeaderProjectTutorReservation {
+        color: #1bd6ff;
+        border: 1px solid #1db6ff;
+        line-height: 22px;
+        width: 83px;
+        right: 100px;
+        text-align: center;
+        transition: all 0.5s;
+
+        &:hover {
+          background: #1db6ff;
+          color: #ffffff;
+        }
+      }
+
+      .HeaderProjectEndLesson {
+        width: 59px;
+        line-height: 23px;
+        color: #fe494a;
+        border: 1px solid #fe494a;
+        text-align: center;
+        margin: 4px auto;
+        transition: all 0.5s;
+
+        &:hover {
+          background: #fe494a;
+          color: #ffffff;
+        }
+      }
+      padding-right: 10px;
+
+      .HeaderProjectEndLessonEnd {
+        width: 59px;
+        line-height: 23px;
+        color: #999999;
+        border: 1px solid #999999;
+        text-align: center;
+        margin: 4px auto;
+        transition: all 0.5s;
+
+        &:hover {
+          background: #999999;
+          color: #ffffff;
+        }
+      }
+    }
+    .HeaderProjectItemSave {
+      cursor: pointer;
+      color: #1bd6ff;
+      font-size: 13px;
+      font-family: "Noto Sans KR", sans-serif;
+      border: 1px solid #1db6ff;
+      border-radius: 2px;
+      line-height: 32px;
+      width: 100%;
+      height: 23px;
+      display: flex;
+      align-items: center;
+      margin: 4px auto;
+      img {
+        display: block;
+        margin: 0px 8px;
+      }
+      margin-right: 10px;
+    }
+
+    .HeaderProjectItemSeperate {
+      line-height: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      margin: 0px 16px 0px 16px;
+    }
+    .HeaderProjectItem {
+      cursor: pointer;
+      line-height: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      // margin-right: 25px;
+      img {
+        display: block;
+      }
+    }
+    .HeaderProjectName {
+      cursor: auto;
+      font-size: 13px;
+      color: #ffffff;
+    }
+
+    .HeaderTrainingList {
+      border: solid 1px red;
+      margin: 0px 0px 0px 10px;
+    }
+
+    .ThemeSwitch {
+      width: 50px;
+      height: 22px;
+      margin: 0px 12px 0px 0px;
+      filter: none !important;
+    }
+
+    .HelpBUtton {
+      margin: 0px 24px 0px 0px;
+    }
+  }
+}

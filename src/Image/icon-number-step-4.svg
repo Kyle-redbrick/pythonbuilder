@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="242" height="36" viewBox="0 0 242 36">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-59 -281) translate(59 280)">
+                <path stroke="#CBCBCB" stroke-width="3" d="M8 19.75L224.5 19.25"/>
+                <path stroke="#63BAF5" stroke-width="3" d="M8 19.75L224.5 19.5"/>
+                <circle cx="18" cy="19" r="18" fill="#63BAF5"/>
+                <circle cx="88" cy="19" r="18" fill="#63BAF5"/>
+                <circle cx="158" cy="19" r="18" fill="#63BAF5"/>
+                <circle cx="224" cy="19" r="18" fill="#63BAF5"/>
+                <text fill="#FFF" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="21" font-weight="bold" letter-spacing="-.315">
+                    <tspan x="12.473" y="24">1</tspan>
+                </text>
+                <text fill="#FFF" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="21" font-weight="bold" letter-spacing="-.315">
+                    <tspan x="82.473" y="24">2</tspan>
+                </text>
+                <text fill="#FFF" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="21" font-weight="bold" letter-spacing="-.315">
+                    <tspan x="152.473" y="24">3</tspan>
+                </text>
+                <text fill="#FFF" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="21" font-weight="bold" letter-spacing="-.315">
+                    <tspan x="217.473" y="24">4</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

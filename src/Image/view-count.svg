@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>view count</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wizschool-1.1v" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main_-wizapp_app-detail" transform="translate(-901.000000, -350.000000)">
+            <g id="app-detail" transform="translate(360.000000, 192.000000)">
+                <g id="Group-6" transform="translate(541.000000, 158.000000)">
+                    <g id="iconfinder_eye-24_103177" transform="translate(0.500000, 0.000000)">
+                        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                        <path d="M12.012,4 C4.075,4 0,12 0,12 C0,12 3.075,20 12.012,20 C20.105,20 24.023,12.031 24.023,12.031 C24.023,12.031 20.074,4 12.012,4 Z M12.03,17 C9.128,17 7.03,14.812 7.03,12 C7.03,9.187 9.128,7 12.03,7 C14.932,7 17.03,9.187 17.03,12 C17.03,14.812 14.932,17 12.03,17 Z M12.03,9 C10.372,9.003 9.03,10.393 9.03,12 C9.03,13.606 10.372,15 12.03,15 C13.688,15 15.03,13.605 15.03,12 C15.03,10.392 13.688,8.997 12.03,9 Z" id="Shape" fill="#3A405B" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

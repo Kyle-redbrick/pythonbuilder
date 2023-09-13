@@ -1,0 +1,18 @@
+.popup_twobutton {
+  text-align: center;
+  width: 300px;
+
+  .popup_buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .popup_button-cancel {
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .popup_twobutton {
+    margin-top: 30vh;
+    width: 100%;
+  }
+}

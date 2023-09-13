@@ -1,0 +1,168 @@
+.Page--LiveTutorTutor {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  input::-ms-clear {
+    display: none;
+  }
+  .LiveTutorTutor--page {
+    width: 100%;
+    max-width: 1200px;
+    flex: 1 0 auto;
+    margin: 50px auto;
+
+    // padding: 0px 250px 0px 250px;
+  }
+
+  .LiveTutorTutor--page__reservationList {
+    padding: 0px 250px 0px 250px;
+  }
+
+  .LiveTutorTutor--page__tutorGuide {
+    padding: 0px 250px 0px 250px;
+  }
+
+  .LiveTutorTutor--page__tutorNotice {
+    padding: 0px 250px 0px 250px;
+  }
+
+  .LiveTutorTutor {
+    max-width: 1200px;
+    width: 100%;
+    flex: 1 0 auto;
+    margin: 50px auto;
+  }
+
+  .LiveTutorTutor__header {
+    h2 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .LiveTutorTutor__body {
+    width: 100%;
+
+    .LiveTutorTutor__Tabs {
+      width: 100%;
+      margin-top: 10px;
+      .LiveTutorTutor__Tab {
+        color: inherit;
+        text-decoration: none;
+        padding-bottom: 7px;
+        margin-top: 7px;
+        margin-right: 20px;
+        display: inline-block;
+        border: 0;
+      }
+      .LiveTutorTutor__Tab:hover {
+        font-weight: bold;
+        cursor: pointer;
+        color: #000000;
+      }
+      .on {
+        border-bottom: 2px solid #000000;
+        font-weight: bold;
+      }
+      .off {
+        color: #8e8e93;
+      }
+    }
+  }
+
+  .LiveTutorTutor--Header--contants {
+    border: 1px solid #fcfcfc;
+    margin-bottom: 12px;
+    margin-top: 10px;
+
+    .tabs-list {
+      width: 100%;
+      display: flex;
+      justify-content: left;
+      list-style: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      border-bottom: solid 1px #d9d9d9;
+    }
+
+    .LiveTutorTutor--Header--tabLink {
+      text-decoration: none;
+    }
+
+    .LiveTutorTutor--Header--tab {
+      cursor: pointer;
+      padding-bottom: 8px;
+      margin-right: 30px;
+      border-bottom: 2px solid transparent;
+      color: #000000;
+    }
+
+    .tab--on {
+      font-weight: bold;
+      border-color: #000000;
+    }
+
+    .LiveTutorTutor--Header--tab {
+      margin-right: 20px;
+    }
+  }
+
+  .LiveTutorTutor--Header--contants--hide {
+    display: none;
+  }
+
+  .line {
+    margin-top: -1px;
+    border-radius: 7px;
+    border: solid 0.5px #ebebeb;
+  }
+  @media screen and (max-width: 1199px) {
+    .LiveTutorTutor {
+      width: 100%;
+      max-width: 600px;
+      min-width: 320px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .LiveTutorTutor--page {
+      width: 100%;
+      max-width: 600px;
+      min-width: 320px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .LiveTutorTutor__body {
+      .column {
+        width: 100%;
+        margin-bottom: 0px;
+      }
+    }
+
+    .LiveTutorTutor--page__schedule {
+      h2 {
+        margin: 30px 0 20px 16px;
+      }
+
+      .LiveTutorTutor__Tabs {
+        margin: 40px 0 0 0;
+        padding: 0 16px;
+
+        .LiveTutorTutor__Tab {
+          line-height: 18px;
+          margin: 0;
+          padding: 0;
+          font-weight: 700;
+          font-size: 18px;
+        }
+      }
+
+    }
+  }
+}

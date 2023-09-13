@@ -1,0 +1,23 @@
+.popup_oneinput {
+  text-align: center;
+  width: 300px;
+
+  .popup_input-oneinput {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 260px;
+    border-radius: 25px !important;
+  }
+
+  .popup_button-oneinput {
+    width: 260px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .popup_oneinput {
+    margin-top: 30vh;
+    width: 100%;
+  }
+}

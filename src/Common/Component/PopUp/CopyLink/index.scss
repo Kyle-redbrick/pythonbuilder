@@ -1,0 +1,94 @@
+.popup_shareApp {
+  text-align: center;
+  width: 400px;
+  margin: 20px auto 0;
+
+  .popup_shareApp_qrcode {
+    margin-top: 24px;
+  }
+  .popup_header {
+    margin-bottom: 24px;
+  }
+  .qrpopup__row {
+    display: flex;
+    margin-bottom: 24px;
+  }
+  .qrpopup__row.qrcode {
+    align-items: flex-end;
+    span {
+      font-size: 12px;
+      line-height: 1.5;
+      letter-spacing: -0.23px;
+      color: #ff8225;
+      margin-left: 16px;
+      text-align: left;
+      white-space: pre;
+    }
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.15px;
+    color: #222222;
+    text-align: left;
+    line-height: 2;
+  }
+  .qrpopup__input {
+    width: 80%;
+    height: 46px;
+    margin: 0;
+    border: 1px solid #e3e8f0;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.25;
+    letter-spacing: -0.17px;
+    color: #222222;
+  }
+  .qrpopup__input:focus {
+    outline: none;
+  }
+  /** number 화살표 제거 */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  // .popup_title-link {
+  //   margin-top: 36px;
+  //   margin-bottom: 12px;
+  //   color: #32dab4;
+  // }
+
+  // .PhoneDD {
+  //   margin: 0 auto;
+  //   width: 300px;
+  // }
+  // .PhoneDD__header {
+  //   padding: 0 12px;
+  //   border-radius: 25px;
+  // }
+
+  .qrpopup_button {
+    width: 72px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #63baf5;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.25;
+    letter-spacing: -0.17px;
+    color: #ffffff;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,64 @@
+.LiveTutorTutor__Students {
+  .LiveTutorTutor__Students__Students {
+    width: 800px;
+    margin: 0px auto;
+  }
+  .LiveTutorTutor__Students__Count {
+    margin: 21px 0px;
+  }
+  .LiveTutorTutor__Students__Student:hover {
+    background-color: #ebebeb;
+  }
+  .LiveTutorTutor__Students__Student {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 140px;
+    margin: 14px auto;
+    padding: 14px;
+    border-radius: 7px;
+    border: solid 1px #ebebeb;
+    .Student__Left {
+      display: flex;
+      width: 20%;
+      justify-content: center;
+      margin: 0px auto;
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .Student__Content {
+      width: 60%;
+      .name {
+      }
+      .email {
+        font-weight: 400;
+      }
+      .organization {
+        font-weight: 400;
+      }
+    }
+    .Student__Right {
+      visibility: hidden;
+      width: 20%;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .LiveTutorTutor__Students__Students {
+      width: 100%;
+      padding: 0px 24px;
+    }
+    .LiveTutorTutor__Students__Student {
+      .Student__Left {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

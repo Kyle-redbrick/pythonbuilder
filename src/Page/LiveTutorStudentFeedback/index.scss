@@ -1,0 +1,264 @@
+.Page--LiveTutorStudentFeedback {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: inherit;
+
+  .LiveTutorStudentFeedback {
+    flex: 1 0 auto;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .LiveTutorStudentFeedback__title {
+    margin-top: 50px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 17px;
+  }
+  .LiveTutorStudentFeedback__nav {
+    border-bottom: 1px solid #d9d9d9;
+    padding: 0;
+  }
+  .LiveTutorStudentFeedback__nav:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .LiveTutorStudentFeedback__nav__item {
+    float: left;
+    list-style: none;
+    font-size: 16px;
+    line-height: 40px;
+    margin-right: 30px;
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+
+  .LiveTutorStudentFeedback__subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 18px;
+  }
+
+  .LiveTutorStudentFeedback__section_title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .LiveTutorStudentFeedback__table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #d9d9d9;
+  }
+  .LiveTutorStudentFeedback__thead {
+    border-top: 2px solid #32dab4;
+    border-bottom: 1px solid #32dab4;
+  }
+  .LiveTutorStudentFeedback__th {
+    padding: 9px 20px;
+    text-align: center;
+    color: #32dab4;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .LiveTutorStudentFeedback__th__left {
+    border-right: 1px solid #32dab4;
+    text-align: left;
+    width: 660px;
+  }
+  .LiveTutorStudentFeedback__td {
+    padding: 9px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid #d9d9d9;
+    line-height: 30px;
+  }
+  .LiveTutorStudentFeedback__td__left {
+    text-align: left;
+    border-right: 1px solid #d9d9d9;
+  }
+  .LiveTutorStudentFeedback__hint {
+    font-size: 14px;
+    text-align: right;
+    margin-top: 13px;
+    margin-bottom: 30px;
+  }
+  .LiveTutorStudentFeedback__msg {
+    border-radius: 7px;
+    border: solid 1px #ebebeb;
+    padding: 15px 20px;
+    font-size: 14px;
+    margin-bottom: 50px;
+    white-space: pre-line;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Page--LiveTutorStudentFeedback {
+    .LiveTutorStudentFeedback {
+      width: 90%;
+    }
+    .LiveTutorStudentFeedback__nav {
+      display: none;
+    }
+    .LiveTutorStudentFeedback__title {
+      display: none;
+    }
+    .LiveTutorStudentFeedback__hint {
+      display: none;
+    }
+    .LiveTutorStudentFeedback__table {
+      margin-bottom: 30px;
+    }
+    .LiveTutorStudentFeedback__th__left {
+      width: 75%;
+    }
+  }
+}
+
+// .liveTutorStudentFeedback--container {
+//   .LiveTutorStudentFeedback {
+//     overflow-x: scroll;
+//     max-height: 700px;
+//   }
+//   .LiveTutorStudentFeedback__subtitle {
+//     font-size: 20px;
+//     font-weight: bold;
+//     color: #000000;
+//     text-align: left;
+//   }
+
+//   .LiveTutorStudentFeedback__title {
+//     margin-top: 50px;
+//     font-size: 19px;
+//     font-weight: bold;
+//     margin-bottom: 17px;
+//   }
+//   .LiveTutorStudentFeedback__nav {
+//     border-bottom: 1px solid #d9d9d9;
+//     padding: 0;
+//   }
+//   .LiveTutorStudentFeedback__nav:after {
+//     content: "";
+//     display: block;
+//     clear: both;
+//   }
+//   .LiveTutorStudentFeedback__nav__item {
+//     float: left;
+//     list-style: none;
+//     font-size: 16px;
+//     line-height: 40px;
+//     margin-right: 30px;
+//     a {
+//       text-decoration: none;
+//       color: #000000;
+//     }
+//   }
+//   .LiveTutorStudentFeedback__info {
+//     width: 100%;
+//     height: 90px;
+//     border-radius: 10px;
+//     background-color: #63baf5;
+//     padding: 18px;
+//     text-align: left;
+//     color: white;
+//     margin-bottom: 11px;
+//     margin-top: 11px;
+//   }
+//   .curriculum__title {
+//     opacity: 0.4;
+//     font-size: 14px;
+//     font-weight: 500;
+//     color: #222222;
+//   }
+//   .level__title {
+//     font-size: 20px;
+//     letter-spacing: -0.17px;
+//     color: #ffffff;
+//     line-height: 1.8;
+//     span {
+//       font-weight: bold;
+//     }
+//   }
+//   .LiveTutorStudentFeedback__section_title {
+//     font-size: 16px;
+//     font-weight: 500;
+//     color: #000000;
+//     text-align: left;
+//     margin-bottom: 10px;
+//   }
+
+//   .LiveTutorStudentFeedback__table {
+//     width: 100%;
+//     border-collapse: collapse;
+//     border-spacing: 0;
+//     border: 1px solid #d9d9d9;
+//   }
+//   .LiveTutorStudentFeedback__thead {
+//     border-top: 2px solid #63baf5;
+//     border-bottom: 1px solid #63baf5;
+//   }
+//   .LiveTutorStudentFeedback__th {
+//     padding: 9px 20px;
+//     text-align: center;
+//     color: #63baf5;
+//     font-size: 16px;
+//     font-weight: 500;
+//     line-height: 30px;
+//   }
+//   .LiveTutorStudentFeedback__th__left {
+//     border-right: 1px solid #63baf5;
+//     text-align: left;
+//     width: 660px;
+//   }
+//   .LiveTutorStudentFeedback__td {
+//     padding: 9px 20px;
+//     text-align: center;
+//     font-size: 16px;
+//     font-weight: 500;
+//     border-bottom: 1px solid #d9d9d9;
+//     line-height: 30px;
+//   }
+//   .LiveTutorStudentFeedback__td__left {
+//     text-align: left;
+//     border-right: 1px solid #d9d9d9;
+//   }
+//   .LiveTutorStudentFeedback__hint {
+//     font-size: 14px;
+//     text-align: right;
+//     margin-top: 13px;
+//     margin-bottom: 30px;
+//   }
+//   .LiveTutorStudentFeedback__msg {
+//     border-radius: 7px;
+//     border: solid 1px #ebebeb;
+//     padding: 15px 20px;
+//     font-size: 14px;
+//     margin-bottom: 50px;
+//     white-space: pre-line;
+//     text-align: left;
+//   }
+// }
+
+// @media screen and (max-width: 1199px) {
+//   .liveTutorStudentFeedback--container {
+//     .level__title {
+//       font-size: 16px;
+//       letter-spacing: -0.13px;
+//       color: #ffffff;
+//       span {
+//         font-weight: bold;
+//       }
+//     }
+//   }
+// }

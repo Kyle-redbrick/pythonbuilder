@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>screen_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.818 19.9998 0.818 19.9998 17.182 0 17.182"></polygon>
+    </defs>
+    <g id="wizschool-1.1v" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landscape-1" transform="translate(-20.000000, -548.000000)">
+            <g id="screen_icon" transform="translate(20.000000, 547.000000)">
+                <g id="Group-5">
+                    <g id="Group-4" transform="translate(0.000000, 1.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-3"></g>
+                        <path d="M17.2728,13.545 L2.7278,13.545 C2.2278,13.545 1.8188,13.136 1.8188,12.636 L1.8188,3.545 C1.8188,3.046 2.2278,2.637 2.7278,2.637 L17.2728,2.637 C17.7718,2.637 18.1818,3.046 18.1818,3.545 L18.1818,12.636 C18.1818,13.136 17.7718,13.545 17.2728,13.545 M1.8188,0.818 C0.8178,0.818 -0.0002,1.637 -0.0002,2.637 L-0.0002,13.545 C-0.0002,14.545 0.8178,15.364 1.8188,15.364 L6.3638,15.364 L6.3638,16.274 C6.3638,16.773 6.7728,17.182 7.2728,17.182 L12.7278,17.182 C13.2258,17.182 13.6368,16.773 13.6368,16.274 L13.6368,15.364 L18.1818,15.364 C19.1818,15.364 19.9908,14.545 19.9908,13.545 L19.9998,2.637 C19.9998,1.628 19.1818,0.818 18.1818,0.818 L1.8188,0.818 Z" id="Fill-2" fill="#3A405B" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>event_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wizlab-interface-1.1-v" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landscape-1" transform="translate(-827.000000, -166.000000)" fill="#FFEE58">
+            <g id="API" transform="translate(810.000000, 83.000000)">
+                <g id="Group-24-Copy-8">
+                    <g id="event" transform="translate(17.000000, 83.000000)">
+                        <path d="M14.6210567,4.04776051 L14.3290596,2.57814991 C14.2194866,2.01690658 13.7213738,1.6 13.1379718,1.6 L4.4147792,1.6 C3.74668025,1.6 3.2,2.14991111 3.2,2.82388025 L3.2,21.1767162 C3.2,21.8477032 3.74668025,22.4 4.4147792,22.4 C5.08287815,22.4 5.6295584,21.8477032 5.6295584,21.1767162 L5.6295584,13.8352239 L12.4331511,13.8352239 L12.7251483,15.3018524 C12.8341289,15.8780065 13.3322417,16.282388 13.916236,16.282388 L20.2098702,16.282388 C20.8773769,16.282388 21.4240571,15.7300912 21.4240571,15.0585078 L21.4240571,5.27104433 C21.4240571,4.59707518 20.8773769,4.04776051 20.2098702,4.04776051 L14.6210567,4.04776051 Z" id="Fill-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

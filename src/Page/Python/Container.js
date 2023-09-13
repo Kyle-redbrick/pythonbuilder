@@ -57,7 +57,9 @@ class Container extends Component {
 
   componentWillMount = async () => {
     if (this.userType === "tutorTraining" || this.userType === "pySpring") {
-      const ScriptList = await request.getLectureListPython({}).then((res) => res.json());
+      const ScriptList = await request
+        .getLectureListPython({})
+        .then((res) => res.json());
 
       // freeTrials : 동아사이언스 무료체험, 일반 무료체험
       ScriptList.freeTrials.forEach((freeTrial) => {
@@ -77,7 +79,10 @@ class Container extends Component {
     });
     this.setUpSocket(); // socket server settinglectureTime
 
-    this.dragElement(document.querySelector("#TabWidthBarButton"), this.handleFontSize); // dragEvent create
+    this.dragElement(
+      document.querySelector("#TabWidthBarButton"),
+      this.handleFontSize
+    ); // dragEvent create
 
     window.addEventListener("resize", this.handleResizing);
 
@@ -93,13 +98,16 @@ class Container extends Component {
       }
     });
 
-    socketUtil.socket.on("syncUserBoard", ({ message: { type, isOpenBoard, isOpenThumbnail } }) => {
-      if (type === "openBoard") {
-        this.setState({ isOpenBoard });
-      } else if (type === "openThumbnail") {
-        this.setState({ isOpenThumbnail });
+    socketUtil.socket.on(
+      "syncUserBoard",
+      ({ message: { type, isOpenBoard, isOpenThumbnail } }) => {
+        if (type === "openBoard") {
+          this.setState({ isOpenBoard });
+        } else if (type === "openThumbnail") {
+          this.setState({ isOpenThumbnail });
+        }
       }
-    });
+    );
 
     socketUtil.socket.on("startLecture", (data) => {
       if (!this.lectureInterval) {
@@ -144,7 +152,7 @@ class Container extends Component {
       socketUtil.sendSocket("syncUserBoard", {
         type: "openBoard",
         isOpenBoard: this.state.isOpenBoard,
-      }),
+      })
     );
   };
 
@@ -156,7 +164,8 @@ class Container extends Component {
   handlePopupShow = (type, value) => {
     switch (type) {
       case "endLecture":
-        if (this.state.lectureTime.status) this.setState({ isShowLessonEndPopup: true });
+        if (this.state.lectureTime.status)
+          this.setState({ isShowLessonEndPopup: true });
         break;
       case "endLectureConfirm":
         if (value) {
@@ -167,7 +176,7 @@ class Container extends Component {
               isShowLessonFeedbackPopup: true,
               isShowLessonEndPopup: false,
             },
-            () => this.stopRecording(),
+            () => this.stopRecording()
           );
         } else {
           this.setState({
@@ -199,7 +208,9 @@ class Container extends Component {
       uid: AGORA_UID.TUTOR,
     };
     try {
-      const stop = await request.stopRecording(params).then((res) => res.json());
+      const stop = await request
+        .stopRecording(params)
+        .then((res) => res.json());
       console.log("recording stop:", stop);
     } catch (err) {
       console.error(err);
@@ -245,7 +256,7 @@ class Container extends Component {
       socketUtil.sendSocket("syncUserBoard", {
         type: "openThumbnail",
         isOpenThumbnail: this.state.isOpenThumbnail,
-      }),
+      })
     );
   };
 
@@ -281,7 +292,9 @@ class Container extends Component {
       leftWidthBar.style.height = calc + "px";
       pythonRight.style.height = calc - 32 + "px";
       pythonRight2.style.marginTop =
-        pythonBottom.clientHeight <= 56 ? calc - 88 - 200 + "px" : calc - 88 - pythonBottom.clientHeight + "px";
+        pythonBottom.clientHeight <= 56
+          ? calc - 88 - 200 + "px"
+          : calc - 88 - pythonBottom.clientHeight + "px";
     }
 
     // 화면을 줄일 때, 처음 화면 높이보다 지금 화면 높이가 작으면 실행
@@ -309,11 +322,20 @@ class Container extends Component {
       fluidFont = 14;
     }
 
-    if (this.state.screenWidth !== window.innerWidth || this.state.screenHeight !== window.innerHeight) {
-      let widthChange = this.state.fluidFontSize - (this.state.screenWidth - window.innerWidth) / 100;
-      let heightChange = this.state.fluidFontSize - (this.state.screenHeight - window.innerHeight) / 100;
+    if (
+      this.state.screenWidth !== window.innerWidth ||
+      this.state.screenHeight !== window.innerHeight
+    ) {
+      let widthChange =
+        this.state.fluidFontSize -
+        (this.state.screenWidth - window.innerWidth) / 100;
+      let heightChange =
+        this.state.fluidFontSize -
+        (this.state.screenHeight - window.innerHeight) / 100;
 
-      this.state.screenWidth !== window.innerWidth || fluidFont >= widthChange || fluidFont >= heightChange
+      this.state.screenWidth !== window.innerWidth ||
+      fluidFont >= widthChange ||
+      fluidFont >= heightChange
         ? this.handleFontSize(widthChange)
         : this.handleFontSize(heightChange);
     }
@@ -338,10 +360,10 @@ class Container extends Component {
     )
       return;
 
-    if (!lectureInfo) {
-      window.location.href = "/";
-      return;
-    }
+    // if (!lectureInfo) {
+    //   window.location.href = "/";
+    //   return;
+    // }
     // this.setState({ title: lectureInfo.lecture.title });
     this.setState({
       tutorEmail: lectureInfo.tutorEmail,
@@ -378,7 +400,11 @@ class Container extends Component {
       e.preventDefault();
 
       // console.log(e.clientX , e.screenX);
-      if ((e.clientX / window.innerWidth) * 100 < 20 || (e.clientX / window.innerWidth) * 100 > 40) return;
+      if (
+        (e.clientX / window.innerWidth) * 100 < 20 ||
+        (e.clientX / window.innerWidth) * 100 > 40
+      )
+        return;
 
       let SliderHeight = (e.clientX / 3) * 2;
       let editorWidth = window.innerWidth - e.clientX - 24;

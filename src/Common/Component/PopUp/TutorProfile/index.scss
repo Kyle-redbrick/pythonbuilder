@@ -1,0 +1,111 @@
+.popup_tutorprofile {
+  text-align: center;
+  width: 400px;
+  padding: 0 20px;
+  .popup_up__wrapper {
+    border-bottom: 1px solid #d8d8d8;
+  }
+  .popup_tutorprofile_icon {
+    margin-bottom: 12px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .popup_tutorprofile_name {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .stars {
+    margin-bottom: 20px;
+    .star {
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: 24px;
+      margin: 4px;
+      width: 24px;
+    }
+    .on {
+      border: none;
+      background-image: url("../../../../Image/ic-star-orange.svg");
+    }
+    .off {
+      background-image: url("../../../../Image/star-off.svg");
+    }
+  }
+
+  .popup_tutorprofile_content {
+    padding-top: 24px;
+    text-align: left;
+    white-space: normal;
+    display: block;
+    word-break: break-all;
+  }
+  .popup_tutorprofile_content_title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.71;
+    letter-spacing: -0.18px;
+    color: #000000;
+  }
+  .popup_tutorprofile_content_subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+  .popup_tutorprofile_content_exps {
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 36px;
+  }
+
+  ::-webkit-scrollbar {
+    background: #fff;
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    -webkit-border-radius: 1ex;
+  }
+  ::-webkit-scrollbar-corner {
+    background: #000;
+  }
+
+  .popup_button-tutor {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 300px;
+    .popup_tutorprofile_icon {
+      margin-bottom: 12px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+    .popup_up__wrapper {
+      display: flex;
+      margin-top: 20px;
+    }
+    .popup_title__wrapper {
+    }
+    .popup_tutorprofile_name {
+      font-size: 16px;
+      font-weight: bold;
+      text-align: left;
+      padding-left: 5px;
+    }
+    .popup_tutorprofile_content_title {
+      font-size: 14px;
+    }
+    .popup_tutorprofile_content_subtitle {
+      font-size: 14px;
+    }
+  }
+}

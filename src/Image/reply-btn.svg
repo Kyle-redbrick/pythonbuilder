@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="24px" viewBox="0 0 21 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>reply_btn</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wizschool-1.1v" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main_-wizclass_template-detail" transform="translate(-1488.000000, -1558.000000)">
+            <g id="app-detail" transform="translate(360.000000, 192.000000)">
+                <g id="Group-7" transform="translate(540.000000, 1363.000000)">
+                    <g id="review">
+                        <g id="outline-reply-24px" transform="translate(588.000000, 3.000000)">
+                            <polygon id="Path" points="0 0 21 0 21 24 0 24"></polygon>
+                            <path d="M8.75,9 L8.75,5 L2.625,12 L8.75,19 L8.75,14.9 C13.125,14.9 16.1875,16.5 18.375,20 C17.5,15 14.875,10 8.75,9 Z" id="Path" fill="#3A405B"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

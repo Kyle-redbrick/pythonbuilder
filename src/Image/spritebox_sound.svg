@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="35px" viewBox="0 0 36 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>spritebox_sound</title>
+    <desc>Created with Sketch.</desc>
+    <g id="lab-1.4-ver." stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle-state-2.0ver." transform="translate(-1252.000000, -481.000000)" fill="#FCFCFC">
+            <g id="Group-Copy" transform="translate(1235.000000, 463.000000)">
+                <g id="sound_play_btn" transform="translate(17.666667, 18.000000)">
+                    <path d="M25.3125249,7.1724128 L20.9853331,7.1724128 L20.9853331,25.9613393 C20.9853331,29.8022152 17.4328413,32.8066826 13.3225085,32.1188466 C10.7002274,31.6800073 8.55589199,29.6137481 8.10220027,27.0866389 C7.3888485,23.1247039 10.504769,19.6979052 14.4881253,19.6979052 C15.2442781,19.6979052 15.9804571,19.8451021 16.6524345,20.0734637 L16.6524345,7.1724128 C16.6524345,4.87504077 18.6027382,3 20.9853331,3 L25.3125249,3 C26.5052491,3 27.4782609,3.93545688 27.4782609,5.08551857 C27.4782609,6.23145324 26.5052491,7.1724128 25.3125249,7.1724128" id="Fill-9"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

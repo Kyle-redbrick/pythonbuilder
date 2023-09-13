@@ -1,0 +1,90 @@
+.NoticePopup {
+  min-width: 300px;
+
+  .NoticePopupWrapper {
+    position: relative;
+    z-index: 22;
+    border-radius: 18px;
+    margin: 0 auto;
+    background: #ffffff;
+  }
+
+  .NoticePopupWrapper__inner {
+  }
+  .NoticePopup--Title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+    padding-top: 15px;
+    text-align: center;
+  }
+  .NoticePopup--Subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4a4a;
+
+    margin-top: 15px;
+  }
+
+  .NoticePopup--inputWrapper {
+    width: 100%;
+    border-radius: 3px;
+    border: solid 1px #ebebeb;
+    background-color: #fcfcfc;
+    margin-top: 4px;
+    display: flex;
+  }
+
+  .NoticePopup--input {
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 8px;
+    background-color: #fcfcfc;
+  }
+
+  .NoticePopup--input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .NoticePopup--input:focus {
+    outline: none;
+  }
+
+  .NoticePopup--input::placeholder {
+    color: #c0c0c0;
+  }
+
+  .NoticePopup--warning--message {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ec3f7a;
+  }
+  .ApplyButtonWrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .ApplyButton {
+    width: 200px;
+    height: 43px;
+    border-radius: 25px;
+    border: none;
+    background-color: #32dab4;
+    font-size: 18px;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+// Mobile
+@media screen and (max-width: 1199px) {
+}
